@@ -1,5 +1,5 @@
 //
-//  SignInViewController.swift
+//  SearchViewController.swift
 //  hotty
 //
 //  Created by Louis Régis on 28/03/2018.
@@ -8,22 +8,16 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
-    
-    @IBAction func Click_onSignUp(_ sender: Any) {
-        performSegue(withIdentifier: "SignUp", sender: self)
-    }
+class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-        
 
         // Do any additional setup after loading the view.
     }
 
-   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

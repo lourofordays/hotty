@@ -7,10 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFB612BC206C054F002017A8 /* transparent-image8.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB612BB206C054F002017A8 /* transparent-image8.png */; };
+		BFB612BE206C0AAB002017A8 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612BD206C0AAB002017A8 /* UITabBarController.swift */; };
 		BFC857C8206B8B51009920DD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857C7206B8B51009920DD /* SignInViewController.swift */; };
 		BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857C9206B8C9D009920DD /* SignInImage.jpg */; };
 		BFC857CC206B929E009920DD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857CB206B929E009920DD /* SignUpViewController.swift */; };
 		BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857CD206B99A8009920DD /* SignUpImage.jpg */; };
+		BFC857D0206BF68D009920DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857CF206BF68D009920DD /* HomeViewController.swift */; };
+		BFC857D2206BF6A2009920DD /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D1206BF6A2009920DD /* CommunityViewController.swift */; };
+		BFC857D4206BF6BC009920DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D3206BF6BC009920DD /* CameraViewController.swift */; };
+		BFC857D6206BF6D3009920DD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D5206BF6D3009920DD /* SearchViewController.swift */; };
+		BFC857D8206BF6E1009920DD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D7206BF6E1009920DD /* ProfileViewController.swift */; };
 		E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB389206AF26200FF1F10 /* AppDelegate.swift */; };
 		E6FCB38C206AF26200FF1F10 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB38B206AF26200FF1F10 /* MapVC.swift */; };
 		E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB38D206AF26200FF1F10 /* Main.storyboard */; };
@@ -29,10 +36,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFB612BB206C054F002017A8 /* transparent-image8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent-image8.png"; sourceTree = "<group>"; };
+		BFB612BD206C0AAB002017A8 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		BFC857C7206B8B51009920DD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BFC857C9206B8C9D009920DD /* SignInImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignInImage.jpg; sourceTree = "<group>"; };
 		BFC857CB206B929E009920DD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BFC857CD206B99A8009920DD /* SignUpImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignUpImage.jpg; sourceTree = "<group>"; };
+		BFC857CF206BF68D009920DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BFC857D1206BF6A2009920DD /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
+		BFC857D3206BF6BC009920DD /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		BFC857D5206BF6D3009920DD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BFC857D7206BF6E1009920DD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E6FCB386206AF26200FF1F10 /* hotty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6FCB389206AF26200FF1F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6FCB38B206AF26200FF1F10 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -68,6 +82,7 @@
 			children = (
 				BFC857C9206B8C9D009920DD /* SignInImage.jpg */,
 				BFC857CD206B99A8009920DD /* SignUpImage.jpg */,
+				BFB612BB206C054F002017A8 /* transparent-image8.png */,
 				E6FCB388206AF26200FF1F10 /* hotty */,
 				E6FCB387206AF26200FF1F10 /* Products */,
 			);
@@ -118,6 +133,12 @@
 				E6FCB3A9206AF81900FF1F10 /* ProfileVC.swift */,
 				BFC857C7206B8B51009920DD /* SignInViewController.swift */,
 				BFC857CB206B929E009920DD /* SignUpViewController.swift */,
+				BFC857CF206BF68D009920DD /* HomeViewController.swift */,
+				BFC857D1206BF6A2009920DD /* CommunityViewController.swift */,
+				BFC857D3206BF6BC009920DD /* CameraViewController.swift */,
+				BFC857D5206BF6D3009920DD /* SearchViewController.swift */,
+				BFC857D7206BF6E1009920DD /* ProfileViewController.swift */,
+				BFB612BD206C0AAB002017A8 /* UITabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -186,6 +207,7 @@
 				BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */,
 				E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */,
 				BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */,
+				BFB612BC206C054F002017A8 /* transparent-image8.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,14 +221,20 @@
 				E6FCB3A8206AF80500FF1F10 /* CommunityVC.swift in Sources */,
 				E6FCB392206AF26200FF1F10 /* hotty.xcdatamodeld in Sources */,
 				E6FCB3AA206AF81900FF1F10 /* ProfileVC.swift in Sources */,
+				BFC857D4206BF6BC009920DD /* CameraViewController.swift in Sources */,
 				E6FCB3A4206AF75E00FF1F10 /* SignUpVC.swift in Sources */,
 				E6FCB3B2206AFA1600FF1F10 /* RoundedShadowImageView.swift in Sources */,
+				BFC857D0206BF68D009920DD /* HomeViewController.swift in Sources */,
 				E6FCB38C206AF26200FF1F10 /* MapVC.swift in Sources */,
 				E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */,
+				BFC857D8206BF6E1009920DD /* ProfileViewController.swift in Sources */,
 				BFC857C8206B8B51009920DD /* SignInViewController.swift in Sources */,
 				BFC857CC206B929E009920DD /* SignUpViewController.swift in Sources */,
 				E6FCB3B0206AFA1600FF1F10 /* KeyboardBoundView.swift in Sources */,
+				BFB612BE206C0AAB002017A8 /* UITabBarController.swift in Sources */,
+				BFC857D6206BF6D3009920DD /* SearchViewController.swift in Sources */,
 				E6FCB3A6206AF79800FF1F10 /* SignInVC.swift in Sources */,
+				BFC857D2206BF6A2009920DD /* CommunityViewController.swift in Sources */,
 				E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */,
 				E6FCB3B1206AFA1600FF1F10 /* InsetTextField.swift in Sources */,
 				E6FCB3B3206AFA1600FF1F10 /* RoundedShadowButton.swift in Sources */,
