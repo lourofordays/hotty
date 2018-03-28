@@ -9,6 +9,10 @@
 import UIKit
 
 class SignInViewController: UIViewController {
+    
+    @IBAction func Click_onSignUp(_ sender: Any) {
+        performSegue(withIdentifier: "SignUp", sender: self)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,6 +20,7 @@ class SignInViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

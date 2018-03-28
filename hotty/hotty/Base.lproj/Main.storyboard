@@ -900,7 +900,7 @@
                                     <color key="titleColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lR2-lV-D95" kind="presentation" id="Ghx-EM-5tM"/>
+                                    <action selector="Click_onSignUp:" destination="g0J-D9-T2M" eventType="touchUpInside" id="OZ8-R8-EGd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njg-Ha-R92">
@@ -984,6 +984,9 @@
                                 <state key="normal" title="Already have an account ?">
                                     <color key="titleColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="dismiss_OnClick:" destination="lR2-lV-D95" eventType="touchUpInside" id="UR5-kp-6CZ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jaT-gD-IuQ">
                                 <rect key="frame" x="16" y="151" width="343" height="30"/>
@@ -996,6 +999,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vRZ-dB-0Q3"/>
                     </view>
+                    <connections>
+                        <outlet property="dismiss_onClick" destination="sfV-7B-FlE" id="r7J-Dn-mij"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nfx-M7-0Na" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
