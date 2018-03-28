@@ -97,9 +97,7 @@
 		E6FCB388206AF26200FF1F10 /* hotty */ = {
 			isa = PBXGroup;
 			children = (
-				E6FCB3BB206C14CA00FF1F10 /* Resources */,
 				E6FCB3B8206C140B00FF1F10 /* Utilities */,
-				E6FCB3B7206C13F700FF1F10 /* Model */,
 				E6FCB39F206AF2E400FF1F10 /* View */,
 				E6FCB3A0206AF2EC00FF1F10 /* Controller */,
 				E6FCB389206AF26200FF1F10 /* AppDelegate.swift */,
@@ -142,26 +140,12 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		E6FCB3B7206C13F700FF1F10 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		E6FCB3B8206C140B00FF1F10 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				E6FCB3C2206C1AE000FF1F10 /* Constants.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		E6FCB3BB206C14CA00FF1F10 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
