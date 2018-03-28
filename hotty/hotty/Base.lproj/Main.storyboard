@@ -851,10 +851,10 @@
             </objects>
             <point key="canvasLocation" x="1170.4000000000001" y="1516.1919040479761"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main TabVC-->
         <scene sceneID="d8k-f4-jQJ">
             <objects>
-                <tabBarController id="zHw-Kh-O2L" sceneMemberID="viewController">
+                <tabBarController id="zHw-Kh-O2L" customClass="DNMainTabVC" customModule="hotty" customModuleProvider="target" sceneMemberID="viewController">
                     <value key="contentSizeForViewInPopover" type="size" width="0.0" height="3"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="m74-mO-R93">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
