@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xd6-zq-4Wu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zHw-Kh-O2L">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -860,6 +860,107 @@
             </objects>
             <point key="canvasLocation" x="46" y="1081"/>
         </scene>
+        <!--Community-->
+        <scene sceneID="xrh-P2-oqz">
+            <objects>
+                <viewController id="2qA-iM-0ed" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="r9B-qo-t6G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vPw-gr-KqA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Community" image="Community" selectedImage="Community" id="3cO-YG-V68"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sC9-IR-79U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1171" y="2183"/>
+        </scene>
+        <!--Aperture-->
+        <scene sceneID="Vbd-Kl-j3L">
+            <objects>
+                <viewController id="FeW-UZ-lbh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4WC-br-K0e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xut-ea-QUG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Aperture" image="Aperture" selectedImage="Aperture" id="pdx-7E-bNI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3r-HA-GVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="2934"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="pka-vu-oxW">
+            <objects>
+                <viewController id="nqP-Es-rFU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cXP-SE-gjU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UHJ-QB-TGY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="Search 6" selectedImage="Search 1" id="2ip-eR-2us"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cJ6-HB-oww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="3663"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="MiU-2f-pX7">
+            <objects>
+                <viewController id="xyZ-dI-fqH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wzu-fY-azL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bgA-aT-ljJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="Profile" id="27o-G7-ogA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ej3-U6-lnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="4423"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Pah-Aq-Afj">
+            <objects>
+                <viewController id="ooJ-Jh-wfe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2pF-8E-bdZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="O35-fn-Vih"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home-1" id="Uhs-D9-RZW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8Q-Nn-TxW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1171" y="1517"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="d8k-f4-jQJ">
+            <objects>
+                <tabBarController id="zHw-Kh-O2L" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="m74-mO-R93">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ooJ-Jh-wfe" kind="relationship" relationship="viewControllers" id="QeH-ZA-XIR"/>
+                        <segue destination="2qA-iM-0ed" kind="relationship" relationship="viewControllers" id="4oF-MG-dZ6"/>
+                        <segue destination="FeW-UZ-lbh" kind="relationship" relationship="viewControllers" id="XOI-eV-ios"/>
+                        <segue destination="nqP-Es-rFU" kind="relationship" relationship="viewControllers" id="Ckk-q3-HpA"/>
+                        <segue destination="xyZ-dI-fqH" kind="relationship" relationship="viewControllers" id="Cu7-gi-RIF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yO7-zy-HfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="1935"/>
+        </scene>
         <!--Sign In View Controller-->
         <scene sceneID="RKt-Cz-oQk">
             <objects>
@@ -1040,10 +1141,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Aperture" width="60" height="60"/>
         <image name="Aperture 3" width="83" height="83"/>
         <image name="Close" width="60" height="60"/>
+        <image name="Community" width="60" height="60"/>
         <image name="Community 4" width="83" height="83"/>
+        <image name="Home-1" width="21" height="23"/>
         <image name="Profile" width="60" height="60"/>
+        <image name="Search 1" width="60" height="60"/>
+        <image name="Search 6" width="29" height="29"/>
         <image name="Search 8" width="57" height="57"/>
         <image name="SignInImage.jpg" width="2137" height="1500"/>
         <image name="SignUpImage.jpg" width="2250" height="1500"/>
