@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFC857C6206B8985009920DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857C5206B8985009920DD /* ViewController.swift */; };
+		BFC857C8206B8B51009920DD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857C7206B8B51009920DD /* SignInViewController.swift */; };
+		BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857C9206B8C9D009920DD /* SignInImage.jpg */; };
+		BFC857CC206B929E009920DD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857CB206B929E009920DD /* SignUpViewController.swift */; };
+		BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857CD206B99A8009920DD /* SignUpImage.jpg */; };
 		E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB389206AF26200FF1F10 /* AppDelegate.swift */; };
 		E6FCB38C206AF26200FF1F10 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB38B206AF26200FF1F10 /* MapVC.swift */; };
 		E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB38D206AF26200FF1F10 /* Main.storyboard */; };
@@ -26,6 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFC857C5206B8985009920DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFC857C7206B8B51009920DD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		BFC857C9206B8C9D009920DD /* SignInImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignInImage.jpg; sourceTree = "<group>"; };
+		BFC857CB206B929E009920DD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BFC857CD206B99A8009920DD /* SignUpImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignUpImage.jpg; sourceTree = "<group>"; };
 		E6FCB386206AF26200FF1F10 /* hotty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6FCB389206AF26200FF1F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6FCB38B206AF26200FF1F10 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -60,6 +70,8 @@
 		E6FCB37D206AF26200FF1F10 = {
 			isa = PBXGroup;
 			children = (
+				BFC857C9206B8C9D009920DD /* SignInImage.jpg */,
+				BFC857CD206B99A8009920DD /* SignUpImage.jpg */,
 				E6FCB388206AF26200FF1F10 /* hotty */,
 				E6FCB387206AF26200FF1F10 /* Products */,
 			);
@@ -117,6 +129,9 @@
 				E6FCB3A5206AF79800FF1F10 /* SignInVC.swift */,
 				E6FCB3A7206AF80500FF1F10 /* CommunityVC.swift */,
 				E6FCB3A9206AF81900FF1F10 /* ProfileVC.swift */,
+				BFC857C5206B8985009920DD /* ViewController.swift */,
+				BFC857C7206B8B51009920DD /* SignInViewController.swift */,
+				BFC857CB206B929E009920DD /* SignUpViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -182,7 +197,9 @@
 			files = (
 				E6FCB397206AF26200FF1F10 /* LaunchScreen.storyboard in Resources */,
 				E6FCB394206AF26200FF1F10 /* Assets.xcassets in Resources */,
+				BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */,
 				E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */,
+				BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,10 +214,13 @@
 				E6FCB392206AF26200FF1F10 /* hotty.xcdatamodeld in Sources */,
 				E6FCB3AA206AF81900FF1F10 /* ProfileVC.swift in Sources */,
 				E6FCB3A4206AF75E00FF1F10 /* SignUpVC.swift in Sources */,
+				BFC857C6206B8985009920DD /* ViewController.swift in Sources */,
 				E6FCB3B2206AFA1600FF1F10 /* RoundedShadowImageView.swift in Sources */,
 				E6FCB38C206AF26200FF1F10 /* MapVC.swift in Sources */,
 				E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */,
+				BFC857C8206B8B51009920DD /* SignInViewController.swift in Sources */,
 				E6FCB3B6206AFA3400FF1F10 /* Constants.swift in Sources */,
+				BFC857CC206B929E009920DD /* SignUpViewController.swift in Sources */,
 				E6FCB3B0206AFA1600FF1F10 /* KeyboardBoundView.swift in Sources */,
 				E6FCB3A6206AF79800FF1F10 /* SignInVC.swift in Sources */,
 				E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */,
@@ -343,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
+				DEVELOPMENT_TEAM = 57U64U5JMJ;
 				INFOPLIST_FILE = hotty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
@@ -358,7 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
+				DEVELOPMENT_TEAM = 57U64U5JMJ;
 				INFOPLIST_FILE = hotty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
