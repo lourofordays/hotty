@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		BFB612BC206C054F002017A8 /* transparent-image8.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB612BB206C054F002017A8 /* transparent-image8.png */; };
 		BFB612C2206C0C27002017A8 /* DNMainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */; };
-		BFC857C8206B8B51009920DD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857C7206B8B51009920DD /* SignInViewController.swift */; };
 		BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857C9206B8C9D009920DD /* SignInImage.jpg */; };
-		BFC857CC206B929E009920DD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857CB206B929E009920DD /* SignUpViewController.swift */; };
 		BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857CD206B99A8009920DD /* SignUpImage.jpg */; };
 		BFC857D0206BF68D009920DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857CF206BF68D009920DD /* HomeViewController.swift */; };
 		BFC857D2206BF6A2009920DD /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D1206BF6A2009920DD /* CommunityViewController.swift */; };
@@ -33,14 +31,14 @@
 		E6FCB3B2206AFA1600FF1F10 /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AD206AFA1500FF1F10 /* RoundedShadowImageView.swift */; };
 		E6FCB3B3206AFA1600FF1F10 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AE206AFA1600FF1F10 /* RoundedShadowButton.swift */; };
 		E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */; };
+		E6FCB3BA206C144D00FF1F10 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3B9206C144D00FF1F10 /* Constants.swift */; };
+		E6FCB3BD206C14DA00FF1F10 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3BC206C14DA00FF1F10 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFB612BB206C054F002017A8 /* transparent-image8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent-image8.png"; sourceTree = "<group>"; };
 		BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNMainTabVC.swift; sourceTree = "<group>"; };
-		BFC857C7206B8B51009920DD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BFC857C9206B8C9D009920DD /* SignInImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignInImage.jpg; sourceTree = "<group>"; };
-		BFC857CB206B929E009920DD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		BFC857CD206B99A8009920DD /* SignUpImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignUpImage.jpg; sourceTree = "<group>"; };
 		BFC857CF206BF68D009920DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BFC857D1206BF6A2009920DD /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +62,8 @@
 		E6FCB3AD206AFA1500FF1F10 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
 		E6FCB3AE206AFA1600FF1F10 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadow.swift; sourceTree = "<group>"; };
+		E6FCB3B9206C144D00FF1F10 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../../../../hottie/hottie/hottie/Utilities/Constants.swift; sourceTree = "<group>"; };
+		E6FCB3BC206C14DA00FF1F10 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SqueezeNet.mlmodel; path = ../../../../../hottie/hottie/hottie/Resources/SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +99,9 @@
 		E6FCB388206AF26200FF1F10 /* hotty */ = {
 			isa = PBXGroup;
 			children = (
+				E6FCB3BB206C14CA00FF1F10 /* Resources */,
+				E6FCB3B8206C140B00FF1F10 /* Utilities */,
+				E6FCB3B7206C13F700FF1F10 /* Model */,
 				E6FCB39F206AF2E400FF1F10 /* View */,
 				E6FCB3A0206AF2EC00FF1F10 /* Controller */,
 				E6FCB389206AF26200FF1F10 /* AppDelegate.swift */,
@@ -131,8 +134,6 @@
 				E6FCB3A5206AF79800FF1F10 /* SignInVC.swift */,
 				E6FCB3A7206AF80500FF1F10 /* CommunityVC.swift */,
 				E6FCB3A9206AF81900FF1F10 /* ProfileVC.swift */,
-				BFC857C7206B8B51009920DD /* SignInViewController.swift */,
-				BFC857CB206B929E009920DD /* SignUpViewController.swift */,
 				BFC857CF206BF68D009920DD /* HomeViewController.swift */,
 				BFC857D1206BF6A2009920DD /* CommunityViewController.swift */,
 				BFC857D3206BF6BC009920DD /* CameraViewController.swift */,
@@ -141,6 +142,29 @@
 				BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		E6FCB3B7206C13F700FF1F10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6FCB3B8206C140B00FF1F10 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E6FCB3B9206C144D00FF1F10 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E6FCB3BB206C14CA00FF1F10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6FCB3BC206C14DA00FF1F10 /* SqueezeNet.mlmodel */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,17 +243,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6FCB3A8206AF80500FF1F10 /* CommunityVC.swift in Sources */,
+				E6FCB3BA206C144D00FF1F10 /* Constants.swift in Sources */,
 				E6FCB392206AF26200FF1F10 /* hotty.xcdatamodeld in Sources */,
 				E6FCB3AA206AF81900FF1F10 /* ProfileVC.swift in Sources */,
 				BFC857D4206BF6BC009920DD /* CameraViewController.swift in Sources */,
 				E6FCB3A4206AF75E00FF1F10 /* SignUpVC.swift in Sources */,
 				E6FCB3B2206AFA1600FF1F10 /* RoundedShadowImageView.swift in Sources */,
+				E6FCB3BD206C14DA00FF1F10 /* SqueezeNet.mlmodel in Sources */,
 				BFC857D0206BF68D009920DD /* HomeViewController.swift in Sources */,
 				E6FCB38C206AF26200FF1F10 /* MapVC.swift in Sources */,
 				E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */,
 				BFC857D8206BF6E1009920DD /* ProfileViewController.swift in Sources */,
-				BFC857C8206B8B51009920DD /* SignInViewController.swift in Sources */,
-				BFC857CC206B929E009920DD /* SignUpViewController.swift in Sources */,
 				E6FCB3B0206AFA1600FF1F10 /* KeyboardBoundView.swift in Sources */,
 				BFC857D6206BF6D3009920DD /* SearchViewController.swift in Sources */,
 				E6FCB3A6206AF79800FF1F10 /* SignInVC.swift in Sources */,
