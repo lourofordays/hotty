@@ -16,6 +16,7 @@
 		BFC857D4206BF6BC009920DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D3206BF6BC009920DD /* CameraViewController.swift */; };
 		BFC857D6206BF6D3009920DD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D5206BF6D3009920DD /* SearchViewController.swift */; };
 		BFC857D8206BF6E1009920DD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D7206BF6E1009920DD /* ProfileViewController.swift */; };
+		D3154D3C113B32E75AEFC2A8 /* Pods_hotty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7CB149776E429827B36034 /* Pods_hotty.framework */; };
 		E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB389206AF26200FF1F10 /* AppDelegate.swift */; };
 		E6FCB38C206AF26200FF1F10 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB38B206AF26200FF1F10 /* MapVC.swift */; };
 		E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB38D206AF26200FF1F10 /* Main.storyboard */; };
@@ -32,9 +33,13 @@
 		E6FCB3B3206AFA1600FF1F10 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AE206AFA1600FF1F10 /* RoundedShadowButton.swift */; };
 		E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */; };
 		E6FCB3C3206C1AE000FF1F10 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3C2206C1AE000FF1F10 /* Constants.swift */; };
+		E6FCB3C6206C24C100FF1F10 /* Usergetloaded.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB3C4206C24C100FF1F10 /* Usergetloaded.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11EFD7175A7463B67FA92F3A /* Pods-hotty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hotty.release.xcconfig"; path = "Pods/Target Support Files/Pods-hotty/Pods-hotty.release.xcconfig"; sourceTree = "<group>"; };
+		7708ED7576CDA804FDDEA177 /* Pods-hotty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hotty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hotty/Pods-hotty.debug.xcconfig"; sourceTree = "<group>"; };
+		9E7CB149776E429827B36034 /* Pods_hotty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hotty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB612BB206C054F002017A8 /* transparent-image8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent-image8.png"; sourceTree = "<group>"; };
 		BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNMainTabVC.swift; sourceTree = "<group>"; };
 		BFC857C9206B8C9D009920DD /* SignInImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignInImage.jpg; sourceTree = "<group>"; };
@@ -62,6 +67,7 @@
 		E6FCB3AE206AFA1600FF1F10 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadow.swift; sourceTree = "<group>"; };
 		E6FCB3C2206C1AE000FF1F10 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E6FCB3C5206C24C100FF1F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = hotty/Base.lproj/Usergetloaded.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +75,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3154D3C113B32E75AEFC2A8 /* Pods_hotty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8135972BF8CEB4690AC873AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E7CB149776E429827B36034 /* Pods_hotty.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF9FD6ADC30B64C2F9E6BE17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7708ED7576CDA804FDDEA177 /* Pods-hotty.debug.xcconfig */,
+				11EFD7175A7463B67FA92F3A /* Pods-hotty.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E6FCB37D206AF26200FF1F10 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +107,8 @@
 				BFB612BB206C054F002017A8 /* transparent-image8.png */,
 				E6FCB388206AF26200FF1F10 /* hotty */,
 				E6FCB387206AF26200FF1F10 /* Products */,
+				AF9FD6ADC30B64C2F9E6BE17 /* Pods */,
+				8135972BF8CEB4690AC873AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +128,7 @@
 				E6FCB3A0206AF2EC00FF1F10 /* Controller */,
 				E6FCB389206AF26200FF1F10 /* AppDelegate.swift */,
 				E6FCB38D206AF26200FF1F10 /* Main.storyboard */,
+				E6FCB3C4206C24C100FF1F10 /* Usergetloaded.storyboard */,
 				E6FCB393206AF26200FF1F10 /* Assets.xcassets */,
 				E6FCB395206AF26200FF1F10 /* LaunchScreen.storyboard */,
 				E6FCB398206AF26200FF1F10 /* Info.plist */,
@@ -155,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E6FCB39B206AF26200FF1F10 /* Build configuration list for PBXNativeTarget "hotty" */;
 			buildPhases = (
+				72E7F78AB89076BB53B50732 /* [CP] Check Pods Manifest.lock */,
 				E6FCB382206AF26200FF1F10 /* Sources */,
 				E6FCB383206AF26200FF1F10 /* Frameworks */,
 				E6FCB384206AF26200FF1F10 /* Resources */,
+				8BC7ED9A4C2093EAC7FB06E1 /* [CP] Embed Pods Frameworks */,
+				C718F2051B23716F901D90F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6FCB397206AF26200FF1F10 /* LaunchScreen.storyboard in Resources */,
+				E6FCB3C6206C24C100FF1F10 /* Usergetloaded.storyboard in Resources */,
 				E6FCB394206AF26200FF1F10 /* Assets.xcassets in Resources */,
 				BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */,
 				E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */,
@@ -217,6 +248,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72E7F78AB89076BB53B50732 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hotty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC7ED9A4C2093EAC7FB06E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hotty/Pods-hotty-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hotty/Pods-hotty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C718F2051B23716F901D90F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hotty/Pods-hotty-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E6FCB382206AF26200FF1F10 /* Sources */ = {
@@ -262,6 +351,14 @@
 				E6FCB396206AF26200FF1F10 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E6FCB3C4206C24C100FF1F10 /* Usergetloaded.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6FCB3C5206C24C100FF1F10 /* Base */,
+			);
+			name = Usergetloaded.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -376,10 +473,11 @@
 		};
 		E6FCB39C206AF26200FF1F10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7708ED7576CDA804FDDEA177 /* Pods-hotty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57U64U5JMJ;
+				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hotty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
@@ -391,10 +489,11 @@
 		};
 		E6FCB39D206AF26200FF1F10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11EFD7175A7463B67FA92F3A /* Pods-hotty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57U64U5JMJ;
+				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hotty/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
