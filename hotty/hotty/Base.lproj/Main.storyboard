@@ -50,6 +50,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
+                                                            <action selector="viewLoginBtnPressed:" destination="0Bi-ur-dvT" eventType="touchUpInside" id="ayy-km-LDB"/>
                                                             <segue destination="wj0-kl-hBR" kind="show" identifier="viewLogin" id="WWn-gA-K9V"/>
                                                         </connections>
                                                     </button>
@@ -175,6 +176,7 @@
                                         </constraints>
                                         <state key="normal" title="Button" image="noun_843100_cc"/>
                                         <connections>
+                                            <action selector="signUpBtnPressed:" destination="0Bi-ur-dvT" eventType="touchUpInside" id="sWH-ri-bFm"/>
                                             <segue destination="zHw-Kh-O2L" kind="show" identifier="toMyMap" id="DBd-DN-NqQ"/>
                                         </connections>
                                     </button>
@@ -350,6 +352,7 @@
                                         </constraints>
                                         <state key="normal" title="Button" image="noun_843100_cc"/>
                                         <connections>
+                                            <action selector="loginBtnPressed:" destination="wj0-kl-hBR" eventType="touchUpInside" id="9bt-mx-ToQ"/>
                                             <segue destination="zHw-Kh-O2L" kind="show" identifier="toLogin" id="DVb-Sm-1ed"/>
                                         </connections>
                                     </button>
@@ -780,6 +783,6 @@
         <image name="noun_843100_cc" width="700" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DVb-Sm-1ed"/>
+        <segue reference="DBd-DN-NqQ"/>
     </inferredMetricsTieBreakers>
 </document>
