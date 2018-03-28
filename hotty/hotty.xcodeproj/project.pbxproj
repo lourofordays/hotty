@@ -493,8 +493,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
+				DEVELOPMENT_TEAM = 57U64U5JMJ;
 				INFOPLIST_FILE = hotty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,8 +510,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
+				DEVELOPMENT_TEAM = 57U64U5JMJ;
 				INFOPLIST_FILE = hotty/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -342,7 +342,7 @@
         <!--Camera View Controller2-->
         <scene sceneID="SU3-hw-i2n">
             <objects>
-                <viewController id="MdQ-ko-iks" customClass="CameraViewController2" customModule="hotty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraViewController2" id="MdQ-ko-iks" customClass="CameraViewController2" customModule="hotty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VQc-sZ-z3Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -360,6 +360,7 @@
                         <viewLayoutGuide key="safeArea" id="CxH-GE-hn5"/>
                     </view>
                     <connections>
+                        <outlet property="CameraViewController2" destination="VQc-sZ-z3Q" id="hOi-Pi-mKI"/>
                         <segue destination="f56-VH-wVn" kind="presentation" identifier="showPhotoSegue" id="if9-SA-hj9"/>
                     </connections>
                 </viewController>
