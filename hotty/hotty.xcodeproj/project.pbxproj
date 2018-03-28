@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BFB612BC206C054F002017A8 /* transparent-image8.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB612BB206C054F002017A8 /* transparent-image8.png */; };
 		BFB612C2206C0C27002017A8 /* DNMainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */; };
+		BFB612CA206C3498002017A8 /* noun_105496_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB612C9206C3497002017A8 /* noun_105496_cc.png */; };
+		BFB612CC206C3580002017A8 /* PreviewCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612CB206C3580002017A8 /* PreviewCameraViewController.swift */; };
 		BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857C9206B8C9D009920DD /* SignInImage.jpg */; };
 		BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857CD206B99A8009920DD /* SignUpImage.jpg */; };
 		BFC857D0206BF68D009920DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857CF206BF68D009920DD /* HomeViewController.swift */; };
@@ -42,6 +44,8 @@
 		9E7CB149776E429827B36034 /* Pods_hotty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hotty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB612BB206C054F002017A8 /* transparent-image8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent-image8.png"; sourceTree = "<group>"; };
 		BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNMainTabVC.swift; sourceTree = "<group>"; };
+		BFB612C9206C3497002017A8 /* noun_105496_cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_105496_cc.png; sourceTree = "<group>"; };
+		BFB612CB206C3580002017A8 /* PreviewCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCameraViewController.swift; sourceTree = "<group>"; };
 		BFC857C9206B8C9D009920DD /* SignInImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignInImage.jpg; sourceTree = "<group>"; };
 		BFC857CD206B99A8009920DD /* SignUpImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignUpImage.jpg; sourceTree = "<group>"; };
 		BFC857CF206BF68D009920DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				BFC857C9206B8C9D009920DD /* SignInImage.jpg */,
 				BFC857CD206B99A8009920DD /* SignUpImage.jpg */,
 				BFB612BB206C054F002017A8 /* transparent-image8.png */,
+				BFB612C9206C3497002017A8 /* noun_105496_cc.png */,
 				E6FCB388206AF26200FF1F10 /* hotty */,
 				E6FCB387206AF26200FF1F10 /* Products */,
 				AF9FD6ADC30B64C2F9E6BE17 /* Pods */,
@@ -163,6 +168,7 @@
 				BFC857D5206BF6D3009920DD /* SearchViewController.swift */,
 				BFC857D7206BF6E1009920DD /* ProfileViewController.swift */,
 				BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */,
+				BFB612CB206C3580002017A8 /* PreviewCameraViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 			files = (
 				E6FCB397206AF26200FF1F10 /* LaunchScreen.storyboard in Resources */,
 				E6FCB3C6206C24C100FF1F10 /* Usergetloaded.storyboard in Resources */,
+				BFB612CA206C3498002017A8 /* noun_105496_cc.png in Resources */,
 				E6FCB394206AF26200FF1F10 /* Assets.xcassets in Resources */,
 				BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */,
 				E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */,
@@ -322,6 +329,7 @@
 				E6FCB3AA206AF81900FF1F10 /* ProfileVC.swift in Sources */,
 				BFC857D4206BF6BC009920DD /* CameraViewController.swift in Sources */,
 				E6FCB3A4206AF75E00FF1F10 /* SignUpVC.swift in Sources */,
+				BFB612CC206C3580002017A8 /* PreviewCameraViewController.swift in Sources */,
 				E6FCB3B2206AFA1600FF1F10 /* RoundedShadowImageView.swift in Sources */,
 				BFC857D0206BF68D009920DD /* HomeViewController.swift in Sources */,
 				E6FCB38C206AF26200FF1F10 /* MapVC.swift in Sources */,

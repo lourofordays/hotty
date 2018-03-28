@@ -312,25 +312,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZFP-GD-aMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13433" y="-8823"/>
+            <point key="canvasLocation" x="-13636" y="-9774"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="Vbd-Kl-j3L">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3r-HA-GVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="FeW-UZ-lbh" customClass="CameraViewController" customModule="hotty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4WC-br-K0e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="xut-ea-QUG"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Aperture" selectedImage="Aperture" id="pdx-7E-bNI">
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L3r-HA-GVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-14473" y="-8823"/>
+        </scene>
+        <!--Preview Camera View Controller-->
+        <scene sceneID="yLm-En-okG">
+            <objects>
+                <viewController id="f56-VH-wVn" customClass="PreviewCameraViewController" customModule="hotty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N2k-Hz-DPE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rFd-zf-HgJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k45-Ji-a8j">
+                                <rect key="frame" x="284" y="578" width="75" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="noun_105496_cc.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF9-7d-9Wb">
+                                <rect key="frame" x="-20" y="0.0" width="114" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Close"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rFd-zf-HgJ" firstAttribute="trailing" secondItem="M9V-cv-Ddl" secondAttribute="trailing" id="8hg-rC-AyR"/>
+                            <constraint firstItem="rFd-zf-HgJ" firstAttribute="bottom" secondItem="M9V-cv-Ddl" secondAttribute="bottom" id="E7p-XK-krl"/>
+                            <constraint firstItem="rFd-zf-HgJ" firstAttribute="top" secondItem="N2k-Hz-DPE" secondAttribute="top" id="e5V-FV-LNG"/>
+                            <constraint firstItem="rFd-zf-HgJ" firstAttribute="leading" secondItem="M9V-cv-Ddl" secondAttribute="leading" id="fpx-hE-BZ1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M9V-cv-Ddl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nym-uz-n9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13687.200000000001" y="-8824.1379310344837"/>
         </scene>
         <!--Profile-->
         <scene sceneID="MiU-2f-pX7">
@@ -395,6 +431,20 @@
             </objects>
             <point key="canvasLocation" x="-17033" y="-8823"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="1p2-G3-dfe">
+            <objects>
+                <viewController id="zVM-Wf-vT8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fZa-t3-Fhu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xFe-JC-9y4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AkP-w8-Y1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
         <image name="Aperture" width="60" height="60"/>
@@ -402,6 +452,7 @@
         <image name="Home-1" width="21" height="23"/>
         <image name="Profile" width="60" height="60"/>
         <image name="aperturedope" width="700" height="700"/>
+        <image name="noun_105496_cc.png" width="700" height="700"/>
         <image name="noun_1349196_cc" width="700" height="700"/>
     </resources>
 </document>
