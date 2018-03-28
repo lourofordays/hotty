@@ -1,5 +1,5 @@
 //
-//  PreviewCameraViewController.swift
+//  CameraViewController2.swift
 //  hotty
 //
 //  Created by Louis Régis on 28/03/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PreviewCameraViewController: UIViewController {
+class CameraViewController2: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,10 +16,8 @@ class PreviewCameraViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func cancelBtn_TouchUpInside(_ sender: Any) {
-    }
-    
-    @IBAction func sendBtn_TouchUpInside(_ sender: Any) {
+    @IBAction func cameraBtn_TouchUpInside(_ sender: Any) {
+        performSegue(withIdentifier: "showPhotoSegue", sender: nil)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

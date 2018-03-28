@@ -322,6 +322,13 @@
                     <view key="view" contentMode="scaleToFill" id="4WC-br-K0e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTh-4a-LU2">
+                                <rect key="frame" x="130" y="560" width="114" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Aperture 4"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="xut-ea-QUG"/>
                     </view>
@@ -331,6 +338,34 @@
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-14473" y="-8823"/>
+        </scene>
+        <!--Camera View Controller2-->
+        <scene sceneID="SU3-hw-i2n">
+            <objects>
+                <viewController id="MdQ-ko-iks" customClass="CameraViewController2" customModule="hotty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VQc-sZ-z3Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4D-Ch-gSm">
+                                <rect key="frame" x="130" y="587" width="114" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Aperture"/>
+                                <connections>
+                                    <action selector="cameraBtn_TouchUpInside:" destination="MdQ-ko-iks" eventType="touchUpInside" id="eqZ-Mc-eXX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CxH-GE-hn5"/>
+                    </view>
+                    <connections>
+                        <segue destination="f56-VH-wVn" kind="presentation" identifier="showPhotoSegue" id="if9-SA-hj9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZy-pM-8XY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14454" y="-8069"/>
         </scene>
         <!--Preview Camera View Controller-->
         <scene sceneID="yLm-En-okG">
@@ -347,11 +382,17 @@
                                 <rect key="frame" x="284" y="578" width="75" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="noun_105496_cc.png"/>
+                                <connections>
+                                    <action selector="sendBtn_TouchUpInside:" destination="f56-VH-wVn" eventType="touchUpInside" id="I7i-ug-R9l"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF9-7d-9Wb">
                                 <rect key="frame" x="-20" y="0.0" width="114" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Close"/>
+                                <connections>
+                                    <action selector="cancelBtn_TouchUpInside:" destination="f56-VH-wVn" eventType="touchUpInside" id="Iib-9D-p2t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -448,6 +489,7 @@
     </scenes>
     <resources>
         <image name="Aperture" width="60" height="60"/>
+        <image name="Aperture 4" width="29" height="29"/>
         <image name="Close" width="60" height="60"/>
         <image name="Home-1" width="21" height="23"/>
         <image name="Profile" width="60" height="60"/>
