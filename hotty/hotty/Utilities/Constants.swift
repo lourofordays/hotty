@@ -14,3 +14,6 @@ import Foundation
 let TO_MY_MAP = "toMyMap"
 let TO_LOGIN = "toLogin"
 let VIEW_LOGIN = "viewLogin"
+let VIEW_SIGN_UP = "viewSignUp"
+
+

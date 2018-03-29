@@ -1,6 +1,7 @@
 //
-//  RegisterVC.swift
-//
+//  SignUpVC.swift
+//  hotty
+
 //  Created by Louis Régis on 28.03.18.
 //  Copyright © 2018 Louro. All rights reserved.
 //
@@ -10,18 +11,18 @@ import FirebaseAuth
 
 class SignUpVC: UIViewController {
     
-
+    @IBOutlet weak var usernameTxtField: UITextField!
+    @IBOutlet weak var passwordTxtField: UITextField!
+    @IBOutlet weak var universityTxtField: UITextField!
+    @IBOutlet weak var universityEmailTxtfield: UITextField!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.bindToKeyboard()
 
         // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func signUpBtnPressed(_ sender: Any) {

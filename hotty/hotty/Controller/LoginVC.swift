@@ -1,5 +1,5 @@
 //
-//  SignInVC.swift
+//  LoginVC.swift
 //  hotty
 //
 //  Created by Louis Régis on 28.03.18.
@@ -8,8 +8,11 @@
 
 import UIKit
 
-class SignInVC: UIViewController {
+class LoginVC: UIViewController {
 
+    @IBOutlet weak var usernameTxtField: UITextField!
+    @IBOutlet weak var passwordTxtField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.bindToKeyboard()
@@ -17,14 +20,14 @@ class SignInVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBAction func loginBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
+    
+    @IBAction func viewSignUpBtn(_ sender: Any) {
+        performSegue(withIdentifier: VIEW_SIGN_UP, sender: nil)
+    }
+    
     
 
 }

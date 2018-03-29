@@ -26,7 +26,7 @@
 		E6FCB394206AF26200FF1F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB393206AF26200FF1F10 /* Assets.xcassets */; };
 		E6FCB397206AF26200FF1F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB395206AF26200FF1F10 /* LaunchScreen.storyboard */; };
 		E6FCB3A4206AF75E00FF1F10 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3A3206AF75E00FF1F10 /* SignUpVC.swift */; };
-		E6FCB3A6206AF79800FF1F10 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3A5206AF79800FF1F10 /* SignInVC.swift */; };
+		E6FCB3A6206AF79800FF1F10 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3A5206AF79800FF1F10 /* LoginVC.swift */; };
 		E6FCB3AA206AF81900FF1F10 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3A9206AF81900FF1F10 /* ProfileVC.swift */; };
 		E6FCB3B0206AFA1600FF1F10 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AB206AFA1500FF1F10 /* KeyboardBoundView.swift */; };
 		E6FCB3B1206AFA1600FF1F10 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AC206AFA1500FF1F10 /* InsetTextField.swift */; };
@@ -60,7 +60,7 @@
 		E6FCB396206AF26200FF1F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6FCB398206AF26200FF1F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6FCB3A3206AF75E00FF1F10 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
-		E6FCB3A5206AF79800FF1F10 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		E6FCB3A5206AF79800FF1F10 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E6FCB3A9206AF81900FF1F10 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		E6FCB3AB206AFA1500FF1F10 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		E6FCB3AC206AFA1500FF1F10 /* InsetTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				E6FCB3A3206AF75E00FF1F10 /* SignUpVC.swift */,
-				E6FCB3A5206AF79800FF1F10 /* SignInVC.swift */,
+				E6FCB3A5206AF79800FF1F10 /* LoginVC.swift */,
 				E6FCB3A9206AF81900FF1F10 /* ProfileVC.swift */,
 				BFC857D5206BF6D3009920DD /* SearchVC.swift */,
 				BFC857CF206BF68D009920DD /* MapVC.swift */,
@@ -331,7 +331,7 @@
 				E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */,
 				E6FCB3B0206AFA1600FF1F10 /* KeyboardBoundView.swift in Sources */,
 				BFC857D6206BF6D3009920DD /* SearchVC.swift in Sources */,
-				E6FCB3A6206AF79800FF1F10 /* SignInVC.swift in Sources */,
+				E6FCB3A6206AF79800FF1F10 /* LoginVC.swift in Sources */,
 				BFB612C2206C0C27002017A8 /* DNMainTabVC.swift in Sources */,
 				BFC857D2206BF6A2009920DD /* CommunityVC.swift in Sources */,
 				E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */,
