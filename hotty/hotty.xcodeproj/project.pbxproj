@@ -12,6 +12,7 @@
 		BFB612CA206C3498002017A8 /* noun_105496_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB612C9206C3497002017A8 /* noun_105496_cc.png */; };
 		BFB612CC206C3580002017A8 /* PreviewCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612CB206C3580002017A8 /* PreviewCameraViewController.swift */; };
 		BFB612CE206C37C5002017A8 /* CameraViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612CD206C37C5002017A8 /* CameraViewController2.swift */; };
+		BFB612D0206D15AE002017A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */; };
 		BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857C9206B8C9D009920DD /* SignInImage.jpg */; };
 		BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857CD206B99A8009920DD /* SignUpImage.jpg */; };
 		BFC857D0206BF68D009920DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857CF206BF68D009920DD /* HomeViewController.swift */; };
@@ -48,6 +49,7 @@
 		BFB612C9206C3497002017A8 /* noun_105496_cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_105496_cc.png; sourceTree = "<group>"; };
 		BFB612CB206C3580002017A8 /* PreviewCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCameraViewController.swift; sourceTree = "<group>"; };
 		BFB612CD206C37C5002017A8 /* CameraViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController2.swift; sourceTree = "<group>"; };
+		BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BFC857C9206B8C9D009920DD /* SignInImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignInImage.jpg; sourceTree = "<group>"; };
 		BFC857CD206B99A8009920DD /* SignUpImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignUpImage.jpg; sourceTree = "<group>"; };
 		BFC857CF206BF68D009920DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				E6FCB395206AF26200FF1F10 /* LaunchScreen.storyboard */,
 				E6FCB398206AF26200FF1F10 /* Info.plist */,
 				E6FCB390206AF26200FF1F10 /* hotty.xcdatamodeld */,
+				BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */,
 			);
 			path = hotty;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			files = (
 				E6FCB397206AF26200FF1F10 /* LaunchScreen.storyboard in Resources */,
 				E6FCB3C6206C24C100FF1F10 /* Usergetloaded.storyboard in Resources */,
+				BFB612D0206D15AE002017A8 /* GoogleService-Info.plist in Resources */,
 				BFB612CA206C3498002017A8 /* noun_105496_cc.png in Resources */,
 				E6FCB394206AF26200FF1F10 /* Assets.xcassets in Resources */,
 				BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */,

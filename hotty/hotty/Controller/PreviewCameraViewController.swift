@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FirebaseStorage
+import FirebaseDatabase
+
 
 class PreviewCameraViewController: UIViewController {
     
@@ -25,21 +28,44 @@ class PreviewCameraViewController: UIViewController {
     }
     
     @IBAction func sendBtn_TouchUpInside(_ sender: Any) {
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        if case let self.image = self.image,  let imageData = UIImageJPEGRepresentation(photo, 0.1) {
+            let photoIdString = NSUUID().uuidString
+            print(photoIdString)
+            let storageRef = FIRStorage.storage().reference(forURL: Config.STORAGE_ROOF_REF).child("posts").child(photoIdString)
+            storageRef.put(imageData, metadata: nil, completion: { (metadata, error) in
+                if error != nil {
+                    ProgressHUD.showError(error!.localizedDescription)
+                    return
+                }
+                let photoUrl = metadata?.downloadURL()?.absoluteString
+                self.sendDataToDatabase(photoUrl: photoUrl!)
+            })
+        } else {
+            ProgressHUD.showError("Profile Image can't be empty")
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func sendDataToDatabase(photoUrl: String) {
+        let ref = FIRDatabase.database().reference()
+        let postsReference = ref.child("posts")
+        let newPostId = postsReference.childByAutoId().key
+        let newPostReference = postsReference.child(newPostId)
+        newPostReference.setValue(["photoUrl": photoUrl], withCompletionBlock: {
+            (error, ref) in
+            if error != nil {
+                ProgressHUD.showError(error!.localizedDescription)
+                return
+            }
+            ProgressHUD.showSuccess("Success")
+        
+    
+    
     }
-    */
+
+
+
+)
+}
 
 }
