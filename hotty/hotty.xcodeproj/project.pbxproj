@@ -15,21 +15,18 @@
 		BFB612D0206D15AE002017A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */; };
 		BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857C9206B8C9D009920DD /* SignInImage.jpg */; };
 		BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857CD206B99A8009920DD /* SignUpImage.jpg */; };
-		BFC857D0206BF68D009920DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857CF206BF68D009920DD /* HomeViewController.swift */; };
-		BFC857D2206BF6A2009920DD /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D1206BF6A2009920DD /* CommunityViewController.swift */; };
+		BFC857D0206BF68D009920DD /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857CF206BF68D009920DD /* MapVC.swift */; };
+		BFC857D2206BF6A2009920DD /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D1206BF6A2009920DD /* CommunityVC.swift */; };
 		BFC857D4206BF6BC009920DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D3206BF6BC009920DD /* CameraViewController.swift */; };
-		BFC857D6206BF6D3009920DD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D5206BF6D3009920DD /* SearchViewController.swift */; };
-		BFC857D8206BF6E1009920DD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D7206BF6E1009920DD /* ProfileViewController.swift */; };
+		BFC857D6206BF6D3009920DD /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D5206BF6D3009920DD /* SearchVC.swift */; };
 		D3154D3C113B32E75AEFC2A8 /* Pods_hotty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7CB149776E429827B36034 /* Pods_hotty.framework */; };
 		E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB389206AF26200FF1F10 /* AppDelegate.swift */; };
-		E6FCB38C206AF26200FF1F10 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB38B206AF26200FF1F10 /* MapVC.swift */; };
 		E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB38D206AF26200FF1F10 /* Main.storyboard */; };
 		E6FCB392206AF26200FF1F10 /* hotty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB390206AF26200FF1F10 /* hotty.xcdatamodeld */; };
 		E6FCB394206AF26200FF1F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB393206AF26200FF1F10 /* Assets.xcassets */; };
 		E6FCB397206AF26200FF1F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB395206AF26200FF1F10 /* LaunchScreen.storyboard */; };
 		E6FCB3A4206AF75E00FF1F10 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3A3206AF75E00FF1F10 /* SignUpVC.swift */; };
 		E6FCB3A6206AF79800FF1F10 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3A5206AF79800FF1F10 /* SignInVC.swift */; };
-		E6FCB3A8206AF80500FF1F10 /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3A7206AF80500FF1F10 /* CommunityVC.swift */; };
 		E6FCB3AA206AF81900FF1F10 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3A9206AF81900FF1F10 /* ProfileVC.swift */; };
 		E6FCB3B0206AFA1600FF1F10 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AB206AFA1500FF1F10 /* KeyboardBoundView.swift */; };
 		E6FCB3B1206AFA1600FF1F10 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AC206AFA1500FF1F10 /* InsetTextField.swift */; };
@@ -37,7 +34,6 @@
 		E6FCB3B3206AFA1600FF1F10 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AE206AFA1600FF1F10 /* RoundedShadowButton.swift */; };
 		E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */; };
 		E6FCB3C3206C1AE000FF1F10 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3C2206C1AE000FF1F10 /* Constants.swift */; };
-		E6FCB3C6206C24C100FF1F10 /* Usergetloaded.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB3C4206C24C100FF1F10 /* Usergetloaded.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,14 +48,12 @@
 		BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BFC857C9206B8C9D009920DD /* SignInImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignInImage.jpg; sourceTree = "<group>"; };
 		BFC857CD206B99A8009920DD /* SignUpImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignUpImage.jpg; sourceTree = "<group>"; };
-		BFC857CF206BF68D009920DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		BFC857D1206BF6A2009920DD /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
+		BFC857CF206BF68D009920DD /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		BFC857D1206BF6A2009920DD /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		BFC857D3206BF6BC009920DD /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
-		BFC857D5206BF6D3009920DD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		BFC857D7206BF6E1009920DD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BFC857D5206BF6D3009920DD /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		E6FCB386206AF26200FF1F10 /* hotty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6FCB389206AF26200FF1F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E6FCB38B206AF26200FF1F10 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		E6FCB38E206AF26200FF1F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E6FCB391206AF26200FF1F10 /* hotty.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hotty.xcdatamodel; sourceTree = "<group>"; };
 		E6FCB393206AF26200FF1F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +61,6 @@
 		E6FCB398206AF26200FF1F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6FCB3A3206AF75E00FF1F10 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		E6FCB3A5206AF79800FF1F10 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
-		E6FCB3A7206AF80500FF1F10 /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		E6FCB3A9206AF81900FF1F10 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		E6FCB3AB206AFA1500FF1F10 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		E6FCB3AC206AFA1500FF1F10 /* InsetTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
@@ -75,7 +68,6 @@
 		E6FCB3AE206AFA1600FF1F10 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadow.swift; sourceTree = "<group>"; };
 		E6FCB3C2206C1AE000FF1F10 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E6FCB3C5206C24C100FF1F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = hotty/Base.lproj/Usergetloaded.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +129,6 @@
 				E6FCB3A0206AF2EC00FF1F10 /* Controller */,
 				E6FCB389206AF26200FF1F10 /* AppDelegate.swift */,
 				E6FCB38D206AF26200FF1F10 /* Main.storyboard */,
-				E6FCB3C4206C24C100FF1F10 /* Usergetloaded.storyboard */,
 				E6FCB393206AF26200FF1F10 /* Assets.xcassets */,
 				E6FCB395206AF26200FF1F10 /* LaunchScreen.storyboard */,
 				E6FCB398206AF26200FF1F10 /* Info.plist */,
@@ -162,16 +153,13 @@
 		E6FCB3A0206AF2EC00FF1F10 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E6FCB38B206AF26200FF1F10 /* MapVC.swift */,
 				E6FCB3A3206AF75E00FF1F10 /* SignUpVC.swift */,
 				E6FCB3A5206AF79800FF1F10 /* SignInVC.swift */,
-				E6FCB3A7206AF80500FF1F10 /* CommunityVC.swift */,
 				E6FCB3A9206AF81900FF1F10 /* ProfileVC.swift */,
-				BFC857CF206BF68D009920DD /* HomeViewController.swift */,
-				BFC857D1206BF6A2009920DD /* CommunityViewController.swift */,
+				BFC857D5206BF6D3009920DD /* SearchVC.swift */,
+				BFC857CF206BF68D009920DD /* MapVC.swift */,
+				BFC857D1206BF6A2009920DD /* CommunityVC.swift */,
 				BFC857D3206BF6BC009920DD /* CameraViewController.swift */,
-				BFC857D5206BF6D3009920DD /* SearchViewController.swift */,
-				BFC857D7206BF6E1009920DD /* ProfileViewController.swift */,
 				BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */,
 				BFB612CB206C3580002017A8 /* PreviewCameraViewController.swift */,
 				BFB612CD206C37C5002017A8 /* CameraViewController2.swift */,
@@ -250,7 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6FCB397206AF26200FF1F10 /* LaunchScreen.storyboard in Resources */,
-				E6FCB3C6206C24C100FF1F10 /* Usergetloaded.storyboard in Resources */,
 				BFB612D0206D15AE002017A8 /* GoogleService-Info.plist in Resources */,
 				BFB612CA206C3498002017A8 /* noun_105496_cc.png in Resources */,
 				E6FCB394206AF26200FF1F10 /* Assets.xcassets in Resources */,
@@ -291,6 +278,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-hotty/Pods-hotty-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -299,6 +287,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -330,7 +319,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6FCB3A8206AF80500FF1F10 /* CommunityVC.swift in Sources */,
 				BFB612CE206C37C5002017A8 /* CameraViewController2.swift in Sources */,
 				E6FCB3C3206C1AE000FF1F10 /* Constants.swift in Sources */,
 				E6FCB392206AF26200FF1F10 /* hotty.xcdatamodeld in Sources */,
@@ -339,15 +327,13 @@
 				E6FCB3A4206AF75E00FF1F10 /* SignUpVC.swift in Sources */,
 				BFB612CC206C3580002017A8 /* PreviewCameraViewController.swift in Sources */,
 				E6FCB3B2206AFA1600FF1F10 /* RoundedShadowImageView.swift in Sources */,
-				BFC857D0206BF68D009920DD /* HomeViewController.swift in Sources */,
-				E6FCB38C206AF26200FF1F10 /* MapVC.swift in Sources */,
+				BFC857D0206BF68D009920DD /* MapVC.swift in Sources */,
 				E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */,
-				BFC857D8206BF6E1009920DD /* ProfileViewController.swift in Sources */,
 				E6FCB3B0206AFA1600FF1F10 /* KeyboardBoundView.swift in Sources */,
-				BFC857D6206BF6D3009920DD /* SearchViewController.swift in Sources */,
+				BFC857D6206BF6D3009920DD /* SearchVC.swift in Sources */,
 				E6FCB3A6206AF79800FF1F10 /* SignInVC.swift in Sources */,
 				BFB612C2206C0C27002017A8 /* DNMainTabVC.swift in Sources */,
-				BFC857D2206BF6A2009920DD /* CommunityViewController.swift in Sources */,
+				BFC857D2206BF6A2009920DD /* CommunityVC.swift in Sources */,
 				E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */,
 				E6FCB3B1206AFA1600FF1F10 /* InsetTextField.swift in Sources */,
 				E6FCB3B3206AFA1600FF1F10 /* RoundedShadowButton.swift in Sources */,
@@ -371,14 +357,6 @@
 				E6FCB396206AF26200FF1F10 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		E6FCB3C4206C24C100FF1F10 /* Usergetloaded.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6FCB3C5206C24C100FF1F10 /* Base */,
-			);
-			name = Usergetloaded.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -497,11 +475,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57U64U5JMJ;
+				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hotty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,11 +492,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57U64U5JMJ;
+				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hotty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

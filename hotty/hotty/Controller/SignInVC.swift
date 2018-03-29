@@ -12,6 +12,7 @@ class SignInVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.bindToKeyboard()
 
         // Do any additional setup after loading the view.
     }

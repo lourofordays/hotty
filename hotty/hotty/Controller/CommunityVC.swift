@@ -1,8 +1,8 @@
 //
-//  CommunityVC.swift
+//  CommunityViewController.swift
 //  hotty
 //
-//  Created by Louis Régis on 28.03.18.
+//  Created by Louis Régis on 28/03/2018.
 //  Copyright © 2018 Louro. All rights reserved.
 //
 
@@ -12,6 +12,8 @@ class CommunityVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .white
 
         // Do any additional setup after loading the view.
     }

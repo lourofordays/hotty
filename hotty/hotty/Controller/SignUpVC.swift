@@ -6,11 +6,15 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpVC: UIViewController {
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.bindToKeyboard()
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +25,14 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func signUpBtnPressed(_ sender: Any) {
+        
+        Auth.auth().createUser(withEmail: "user1@gmail.com", password: "123456") { (user: User?, error: Error?) in
+            if error != nil {
+                print(error!.localizedDescription)
+                return
+            }
+            print(user!)
+        }
         performSegue(withIdentifier: TO_MY_MAP, sender: nil)
     }
     
