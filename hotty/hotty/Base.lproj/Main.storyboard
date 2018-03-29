@@ -335,6 +335,11 @@
                     <tabBarItem key="tabBarItem" title="" image="Aperture" selectedImage="Aperture" id="pdx-7E-bNI">
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
+                    <connections>
+                        <segue destination="MdQ-ko-iks" kind="popoverPresentation" id="f4s-Wz-0FQ">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-14473" y="-8823"/>
@@ -366,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZy-pM-8XY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14454" y="-8069"/>
+            <point key="canvasLocation" x="-13574" y="-8823"/>
         </scene>
         <!--Preview Camera View Controller-->
         <scene sceneID="yLm-En-okG">
@@ -408,7 +413,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nym-uz-n9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13687.200000000001" y="-8824.1379310344837"/>
+            <point key="canvasLocation" x="-12463" y="-8823"/>
         </scene>
         <!--Profile-->
         <scene sceneID="MiU-2f-pX7">
