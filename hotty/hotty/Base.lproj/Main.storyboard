@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zHw-Kh-O2L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FeW-UZ-lbh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -195,8 +195,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PKI-Fu-faj">
+                                <rect key="frame" x="141" y="610" width="92" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTh-4a-LU2">
-                                <rect key="frame" x="130" y="560" width="114" height="60"/>
+                                <rect key="frame" x="130" y="607" width="114" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Aperture 4"/>
                             </button>
@@ -207,10 +211,13 @@
                     <tabBarItem key="tabBarItem" title="" image="Aperture" selectedImage="Aperture" id="pdx-7E-bNI">
                         <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
                     </tabBarItem>
+                    <connections>
+                        <segue destination="MdQ-ko-iks" kind="presentation" identifier="Switch to camera" id="7y2-fz-eJ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L3r-HA-GVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14473" y="-8823"/>
+            <point key="canvasLocation" x="-14474.4" y="-8823.2383808095965"/>
         </scene>
         <!--Camera View Controller2-->
         <scene sceneID="SU3-hw-i2n">
@@ -226,6 +233,7 @@
                                 <state key="normal" image="Aperture"/>
                                 <connections>
                                     <action selector="cameraBtn_TouchUpInside:" destination="MdQ-ko-iks" eventType="touchUpInside" id="eqZ-Mc-eXX"/>
+                                    <action selector="cameraButton_TouchUpInside:" destination="MdQ-ko-iks" eventType="touchUpInside" id="4nY-wM-lzP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -235,7 +243,7 @@
                     <connections>
                         <outlet property="CameraViewController2" destination="VQc-sZ-z3Q" id="hOi-Pi-mKI"/>
                         <outlet property="camerButton" destination="F4D-Ch-gSm" id="dUx-ju-3ce"/>
-                        <segue destination="f56-VH-wVn" kind="presentation" identifier="showPhotoSegue" id="if9-SA-hj9"/>
+                        <segue destination="f56-VH-wVn" kind="presentation" identifier="showPhoto_Segue" id="if9-SA-hj9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZy-pM-8XY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -250,7 +258,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rFd-zf-HgJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rFd-zf-HgJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k45-Ji-a8j">
@@ -279,6 +287,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="M9V-cv-Ddl"/>
                     </view>
+                    <connections>
+                        <outlet property="photo" destination="rFd-zf-HgJ" id="fyW-lt-k5r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nym-uz-n9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

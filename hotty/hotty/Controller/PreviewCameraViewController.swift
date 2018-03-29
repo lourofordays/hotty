@@ -9,14 +9,19 @@
 import UIKit
 
 class PreviewCameraViewController: UIViewController {
+    
+    @IBOutlet weak var photo: UIImageView!
+    var image: UIImage!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        photo.image = self.image
 
         // Do any additional setup after loading the view.
     }
 
     @IBAction func cancelBtn_TouchUpInside(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func sendBtn_TouchUpInside(_ sender: Any) {
