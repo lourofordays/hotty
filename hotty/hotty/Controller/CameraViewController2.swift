@@ -8,17 +8,22 @@
 
 import UIKit
 import AVFoundation
-
-class CameraViewController2: UIViewController{
+class CameraViewController2 : UIViewController{
     
+
+    @IBOutlet weak var camerButton: UIButton!
     
     var captureSession = AVCaptureSession()
     var backCamera: AVCaptureDevice?
     var frontCamera: AVCaptureDevice
     var currentCamera : AVCaptureDevice?
     
+    var photoOutput : AVCapturePhotoOutput?
+    var cameraPreviewLayer : AVCaptureVideoPreviewLayer?
     
-
+    
+    var image : UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,12 +55,28 @@ class CameraViewController2: UIViewController{
             currentCamera = backCamera
     }
     func setupInputOutput() {
+        do {
+            let captureDeviceInput = try AVCaptureDeviceInput(device: currentCamera!)
+            captureSession.addInput(captureDeviceInput)
+            photoOutput?.setPreparedPhotoSettingsArray([AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])], completionHandler: nil)
+        } catch {
+        print(error)
+        }
         
     }
     func setupPreviewLayer() {
+        cameraPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+        cameraPreviewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
+        cameraPreviewLayer?.connection?.videoOrientation = AVCaptureVideoOrientation.portrait
+        cameraPreviewLayer?.frame = self.view.frame
+        self.view.layer.insertSublayer(cameraPreviewLayer!, at: 0)
+        
+        
+        
         
     }
     func startRunningCaptureSession() {
+        captureSession.startRunning()
         
     }
     
@@ -66,7 +87,6 @@ class CameraViewController2: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
