@@ -11,5 +11,7 @@ target 'hotty' do
   pod 'AlamofireImage', '~> 3.3'
   pod 'SwiftyJSON'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
 end

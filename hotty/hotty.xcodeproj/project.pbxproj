@@ -34,6 +34,7 @@
 		E6FCB3B3206AFA1600FF1F10 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AE206AFA1600FF1F10 /* RoundedShadowButton.swift */; };
 		E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */; };
 		E6FCB3C3206C1AE000FF1F10 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3C2206C1AE000FF1F10 /* Constants.swift */; };
+		E6FCB3CD206D873500FF1F10 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB3CB206D873500FF1F10 /* User.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		E6FCB3AE206AFA1600FF1F10 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadow.swift; sourceTree = "<group>"; };
 		E6FCB3C2206C1AE000FF1F10 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E6FCB3CC206D873500FF1F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/User.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				E6FCB3A0206AF2EC00FF1F10 /* Controller */,
 				E6FCB389206AF26200FF1F10 /* AppDelegate.swift */,
 				E6FCB38D206AF26200FF1F10 /* Main.storyboard */,
+				E6FCB3CB206D873500FF1F10 /* User.storyboard */,
 				E6FCB393206AF26200FF1F10 /* Assets.xcassets */,
 				E6FCB395206AF26200FF1F10 /* LaunchScreen.storyboard */,
 				E6FCB398206AF26200FF1F10 /* Info.plist */,
@@ -245,6 +248,7 @@
 				E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */,
 				BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */,
 				BFB612BC206C054F002017A8 /* transparent-image8.png in Resources */,
+				E6FCB3CD206D873500FF1F10 /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +285,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -290,6 +295,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +363,14 @@
 				E6FCB396206AF26200FF1F10 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E6FCB3CB206D873500FF1F10 /* User.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6FCB3CC206D873500FF1F10 /* Base */,
+			);
+			name = User.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -479,7 +493,7 @@
 				INFOPLIST_FILE = hotty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -496,7 +510,7 @@
 				INFOPLIST_FILE = hotty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

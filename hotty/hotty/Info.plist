@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Hotspot requires your location to make your map personalized!</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Hotspot requires your location to make your map personalized!</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Hotspot requires your location to make your map personalized!</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,6 +20,12 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Hotspot requires your location to make your map personalized!</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Hotspot requires your location to make your map personalized!</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Hotspot requires your location to make your map personalized!</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
