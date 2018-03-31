@@ -13,7 +13,7 @@ import FirebaseDatabase
 import FirebaseStorage
 
 class LoginVC: UIViewController {
-
+    
     @IBOutlet weak var universityEmailTxtField: UITextField!
     @IBOutlet weak var passwordTxtField: UITextField!
     
@@ -26,13 +26,22 @@ class LoginVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(LoginVC.handleTap))
         view.addGestureRecognizer(tap)
         handleTextFields()
-
+        loginBtn.isEnabled = false
+        
         universityEmailTxtField.backgroundColor = UIColor.clear
         universityEmailTxtField.textColor = UIColor.black
         universityEmailTxtField.attributedPlaceholder = NSAttributedString(string: universityEmailTxtField.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor(white: 0.0, alpha: 0.5)])
         passwordTxtField.backgroundColor = UIColor.clear
         passwordTxtField.textColor = UIColor.black
         passwordTxtField.attributedPlaceholder = NSAttributedString(string: passwordTxtField.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor(white: 0.0, alpha: 0.5)])
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        }
     }
     
     func handleTextFields() {
@@ -51,31 +60,29 @@ class LoginVC: UIViewController {
         loginBtn.setTitleColor(UIColor.white, for: UIControlState.normal)
         loginBtn.isEnabled = true
     }
-
-    @IBAction func loginBtnPressed(_ sender: Any) {
-        
-        
-        Auth.auth().signIn(withEmail: universityEmailTxtField.text!, password: passwordTxtField.text!) { (user, error) in
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
-            self.performSegue(withIdentifier: TO_LOGIN, sender: nil)
-        }
-        
-//        // if text fields are empty
-//        if (passwordTxtField.text?.isEmpty)! || (universityEmailTxtField.text?.isEmpty)! {
-//            
-//            //alert message
-//            let alert = UIAlertController(title: "OOPS!", message: "Please fill all fields", preferredStyle: UIAlertControllerStyle.alert)
-//            let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
-//            alert.addAction(ok)
-//            self.present(alert, animated: true, completion: nil)
-//        }
     
+    @IBAction func loginBtnPressed(_ sender: Any) {
+        ProgressHUD.show("Waiting", interaction: false)
+        AuthService.signIn(email: universityEmailTxtField.text!, password: passwordTxtField.text!, onSuccess: {
+            ProgressHUD.showSuccess("Welcome Back!")
+            self.performSegue(withIdentifier: TO_LOGIN, sender: nil)
+        }, onError: { error in
+            ProgressHUD.showError("OOPS!")
+        })
+        
+        //        // if text fields are empty
+        //        if (passwordTxtField.text?.isEmpty)! || (universityEmailTxtField.text?.isEmpty)! {
+        //
+        //            //alert message
+        //            let alert = UIAlertController(title: "OOPS!", message: "Please fill all fields", preferredStyle: UIAlertControllerStyle.alert)
+        //            let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
+        //            alert.addAction(ok)
+        //            self.present(alert, animated: true, completion: nil)
+        //        }
+        
     }
-        @IBAction func viewSignUpBtn(_ sender: Any) {
-            performSegue(withIdentifier: VIEW_SIGN_UP, sender: nil)
+    @IBAction func viewSignUpBtn(_ sender: Any) {
+        performSegue(withIdentifier: VIEW_SIGN_UP, sender: nil)
     }
     
     @objc func handleTap() {

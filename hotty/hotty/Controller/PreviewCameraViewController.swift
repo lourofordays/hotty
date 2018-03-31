@@ -1,11 +1,11 @@
+////
+////  PreviewCameraViewController.swift
+////  hotty
+////
+////  Created by Louis Régis on 28/03/2018.
+////  Copyright © 2018 Louro. All rights reserved.
+////
 //
-//  PreviewCameraViewController.swift
-//  hotty
-//
-//  Created by Louis Régis on 28/03/2018.
-//  Copyright © 2018 Louro. All rights reserved.
-//
-
 //import UIKit
 //import FirebaseStorage
 //import FirebaseDatabase
@@ -28,15 +28,14 @@
 //    }
 //    
 //    @IBAction func sendBtn_TouchUpInside(_ sender: Any) {
-//        
-//        if case let self.image = self.image,  let imageData = UIImageJPEGRepresentation(photo, 0.1) {
+//        if case self.image = self.image,  let imageData = UIImageJPEGRepresentation(photo, 0.1) {
 //            let photoIdString = NSUUID().uuidString
 //            print(photoIdString)
-//            let storageRef = FIRStorage.storage().reference(forURL: Config.STORAGE_ROOF_REF).child("posts").child(photoIdString)
+//            let storageRef = Storage.storage().reference(forURL: Config.STORAGE_ROOT_REF).child("posts").child(photoIdString)
 //            storageRef.put(imageData, metadata: nil, completion: { (metadata, error) in
 //                if error != nil {
-//                    ProgressHUD.showError(error!.localizedDescription)
-//                    return
+//                ProgressHUD.showError(error!.localizedDescription)
+//                return
 //                }
 //                let photoUrl = metadata?.downloadURL()?.absoluteString
 //                self.sendDataToDatabase(photoUrl: photoUrl!)
@@ -47,7 +46,7 @@
 //    }
 //    
 //    func sendDataToDatabase(photoUrl: String) {
-//        let ref = FIRDatabase.database().reference()
+//        let ref = Database.database().reference()
 //        let postsReference = ref.child("posts")
 //        let newPostId = postsReference.childByAutoId().key
 //        let newPostReference = postsReference.child(newPostId)
@@ -69,4 +68,4 @@
 //}
 //
 //}
-
+//

@@ -27,7 +27,8 @@ class SignUpVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(SignUpVC.handleTap))
         view.addGestureRecognizer(tap)
         handleTextFields()
-
+        signUpBtn.isEnabled = false
+        
         usernameTxtField.backgroundColor = UIColor.clear
         usernameTxtField.textColor = UIColor.black
         usernameTxtField.attributedPlaceholder = NSAttributedString(string: usernameTxtField.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor(white: 0.0, alpha: 0.5)])
@@ -61,34 +62,13 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func signUpBtnPressed(_ sender: Any) {
-        
-//        // if text fields are empty
-//        if (usernameTxtField.text?.isEmpty)! || (passwordTxtField.text?.isEmpty)! || (universityTxtField.text?.isEmpty)! || (universityEmailTxtField.text?.isEmpty)! {
-//
-//            //alert message
-//            let alert = UIAlertController(title: "OOPS!", message: "Please fill all fields", preferredStyle: UIAlertControllerStyle.alert)
-//            let ok = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil)
-//            alert.addAction(ok)
-//            self.present(alert, animated: true, completion: nil)
-//        }
-        
-        Auth.auth().createUser(withEmail: universityEmailTxtField.text!, password: passwordTxtField.text!, completion: { (user: User?, error: Error?) in
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
-            let uid = user?.uid
-            setUserInfo(username: self.usernameTxtField.text!, email: self.universityEmailTxtField.text!, university: self.universityTxtField.text!, uid: uid!)
+        ProgressHUD.show("Waiting", interaction: false)
+        AuthService.signUp(username: usernameTxtField.text!, email: universityEmailTxtField.text!, password: passwordTxtField.text!, university: universityTxtField.text!, onSuccess: {
+            ProgressHUD.showSuccess("Welcome Back!")
             self.performSegue(withIdentifier: TO_MY_MAP, sender: nil)
-        }
-    )
-    
-        func setUserInfo(username:String, email: String, university: String, uid: String) {
-        let ref = Database.database().reference()
-        let userReferences = ref.child("users")
-        let newUserReference = userReferences.child(uid)
-        newUserReference.setValue(["username": username, "university": university, "universityEmail": email])
-    }
+        }, onError: { (errorString) in
+            ProgressHUD.showError("OOPS!")
+        })
         
     }
     

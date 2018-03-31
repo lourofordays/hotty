@@ -443,14 +443,6 @@
             </objects>
             <point key="canvasLocation" x="-22484" y="-8632"/>
         </scene>
-        <!--CameraViewController2-->
-        <scene sceneID="wRQ-0M-RW1">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="CameraViewController2" storyboardName="User" referencedIdentifier="CameraViewController2" id="7M2-hw-kaL" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0ux-3d-ejT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-18647" y="-8631"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="7VI-kh-0qo"/>

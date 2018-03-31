@@ -35,6 +35,11 @@
 		E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */; };
 		E6FCB3C3206C1AE000FF1F10 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3C2206C1AE000FF1F10 /* Constants.swift */; };
 		E6FCB3CD206D873500FF1F10 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB3CB206D873500FF1F10 /* User.storyboard */; };
+		E6FCB3D1206EA88200FF1F10 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3D0206EA88200FF1F10 /* SettingsVC.swift */; };
+		E6FCB3D3206EB7E100FF1F10 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3D2206EB7E100FF1F10 /* AuthService.swift */; };
+		E6FCB3D5206F0CAF00FF1F10 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3D4206F0CAF00FF1F10 /* Config.swift */; };
+		E6FCB3E4206F12E700FF1F10 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB3E1206F12E600FF1F10 /* ProgressHUD.m */; };
+		E6FCB3E5206F12E700FF1F10 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB3E2206F12E600FF1F10 /* ProgressHUD.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +75,13 @@
 		E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedShadow.swift; sourceTree = "<group>"; };
 		E6FCB3C2206C1AE000FF1F10 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E6FCB3CC206D873500FF1F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/User.storyboard; sourceTree = "<group>"; };
+		E6FCB3D0206EA88200FF1F10 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		E6FCB3D2206EB7E100FF1F10 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E6FCB3D4206F0CAF00FF1F10 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E6FCB3E0206F12E500FF1F10 /* hotty-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hotty-Bridging-Header.h"; sourceTree = "<group>"; };
+		E6FCB3E1206F12E600FF1F10 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProgressHUD.m; path = "../../../../../Downloads/ProgressHUD-master/ProgressHUD/ProgressHUD/ProgressHUD.m"; sourceTree = "<group>"; };
+		E6FCB3E2206F12E600FF1F10 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ProgressHUD.bundle; path = "../../../../../Downloads/ProgressHUD-master/ProgressHUD/ProgressHUD/ProgressHUD.bundle"; sourceTree = "<group>"; };
+		E6FCB3E3206F12E700FF1F10 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressHUD.h; path = "../../../../../Downloads/ProgressHUD-master/ProgressHUD/ProgressHUD/ProgressHUD.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +149,10 @@
 				E6FCB398206AF26200FF1F10 /* Info.plist */,
 				E6FCB390206AF26200FF1F10 /* hotty.xcdatamodeld */,
 				BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */,
+				E6FCB3E2206F12E600FF1F10 /* ProgressHUD.bundle */,
+				E6FCB3E3206F12E700FF1F10 /* ProgressHUD.h */,
+				E6FCB3E1206F12E600FF1F10 /* ProgressHUD.m */,
+				E6FCB3E0206F12E500FF1F10 /* hotty-Bridging-Header.h */,
 			);
 			path = hotty;
 			sourceTree = "<group>";
@@ -166,6 +182,7 @@
 				BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */,
 				BFB612CB206C3580002017A8 /* PreviewCameraViewController.swift */,
 				BFB612CD206C37C5002017A8 /* CameraViewController2.swift */,
+				E6FCB3D0206EA88200FF1F10 /* SettingsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				E6FCB3C2206C1AE000FF1F10 /* Constants.swift */,
+				E6FCB3D2206EB7E100FF1F10 /* AuthService.swift */,
+				E6FCB3D4206F0CAF00FF1F10 /* Config.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -213,6 +232,7 @@
 				TargetAttributes = {
 					E6FCB385206AF26200FF1F10 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -248,6 +268,7 @@
 				E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */,
 				BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */,
 				BFB612BC206C054F002017A8 /* transparent-image8.png in Resources */,
+				E6FCB3E5206F12E700FF1F10 /* ProgressHUD.bundle in Resources */,
 				E6FCB3CD206D873500FF1F10 /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +305,7 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -294,6 +316,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -325,12 +348,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6FCB3D1206EA88200FF1F10 /* SettingsVC.swift in Sources */,
 				BFB612CE206C37C5002017A8 /* CameraViewController2.swift in Sources */,
 				E6FCB3C3206C1AE000FF1F10 /* Constants.swift in Sources */,
 				E6FCB392206AF26200FF1F10 /* hotty.xcdatamodeld in Sources */,
 				E6FCB3AA206AF81900FF1F10 /* ProfileVC.swift in Sources */,
 				BFC857D4206BF6BC009920DD /* CameraViewController.swift in Sources */,
+				E6FCB3E4206F12E700FF1F10 /* ProgressHUD.m in Sources */,
 				E6FCB3A4206AF75E00FF1F10 /* SignUpVC.swift in Sources */,
+				E6FCB3D3206EB7E100FF1F10 /* AuthService.swift in Sources */,
 				BFB612CC206C3580002017A8 /* PreviewCameraViewController.swift in Sources */,
 				E6FCB3B2206AFA1600FF1F10 /* RoundedShadowImageView.swift in Sources */,
 				BFC857D0206BF68D009920DD /* MapVC.swift in Sources */,
@@ -340,6 +366,7 @@
 				E6FCB3A6206AF79800FF1F10 /* LoginVC.swift in Sources */,
 				BFB612C2206C0C27002017A8 /* DNMainTabVC.swift in Sources */,
 				BFC857D2206BF6A2009920DD /* CommunityVC.swift in Sources */,
+				E6FCB3D5206F0CAF00FF1F10 /* Config.swift in Sources */,
 				E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */,
 				E6FCB3B1206AFA1600FF1F10 /* InsetTextField.swift in Sources */,
 				E6FCB3B3206AFA1600FF1F10 /* RoundedShadowButton.swift in Sources */,
@@ -488,6 +515,7 @@
 			baseConfigurationReference = 7708ED7576CDA804FDDEA177 /* Pods-hotty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hotty/Info.plist;
@@ -495,6 +523,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hotty/hotty-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -505,6 +535,7 @@
 			baseConfigurationReference = 11EFD7175A7463B67FA92F3A /* Pods-hotty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hotty/Info.plist;
@@ -512,6 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hotty/hotty-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

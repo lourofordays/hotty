@@ -29,7 +29,7 @@ import FirebaseStorage
 //        profileImage.isUserInteractionEnabled = true
 //    }
 //
-//    let storageRef = Storage.storage().reference(forURL: "gs://hotty-42982.appspot.com").child("profile_image").child(uid!)
+//    let storageRef = Storage.storage().reference(forURL: Config.STORAGE_ROOT_REF).child("profile_image").child(uid!)
 //    if let profileImage = selectedImage
 //    let imageData = UIImageJPEGRepresentation(profileImage, 0.1) {
 //        storageRef.put(imageData, metadata: nil, completion { (metadata,Error)
