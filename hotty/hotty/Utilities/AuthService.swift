@@ -16,9 +16,11 @@ class AuthService {
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             if error != nil {
                 onError(error!.localizedDescription)
+                
                 return
             }
             onSuccess()
+            print("success")
         }
     }
     static func signUp(username: String, email: String, password: String, university: String, onSuccess: @escaping () -> Void, onError: @escaping (_ errorMessage: String?) -> Void) {

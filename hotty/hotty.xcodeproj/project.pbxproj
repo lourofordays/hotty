@@ -10,8 +10,8 @@
 		BFB612BC206C054F002017A8 /* transparent-image8.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB612BB206C054F002017A8 /* transparent-image8.png */; };
 		BFB612C2206C0C27002017A8 /* DNMainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */; };
 		BFB612CA206C3498002017A8 /* noun_105496_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB612C9206C3497002017A8 /* noun_105496_cc.png */; };
-		BFB612CC206C3580002017A8 /* PreviewCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612CB206C3580002017A8 /* PreviewCameraViewController.swift */; };
-		BFB612CE206C37C5002017A8 /* CameraViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612CD206C37C5002017A8 /* CameraViewController2.swift */; };
+		BFB612CC206C3580002017A8 /* PreviewCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612CB206C3580002017A8 /* PreviewCameraVC.swift */; };
+		BFB612CE206C37C5002017A8 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612CD206C37C5002017A8 /* CameraVC.swift */; };
 		BFB612D0206D15AE002017A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */; };
 		BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857C9206B8C9D009920DD /* SignInImage.jpg */; };
 		BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857CD206B99A8009920DD /* SignUpImage.jpg */; };
@@ -48,8 +48,8 @@
 		BFB612BB206C054F002017A8 /* transparent-image8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent-image8.png"; sourceTree = "<group>"; };
 		BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNMainTabVC.swift; sourceTree = "<group>"; };
 		BFB612C9206C3497002017A8 /* noun_105496_cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_105496_cc.png; sourceTree = "<group>"; };
-		BFB612CB206C3580002017A8 /* PreviewCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCameraViewController.swift; sourceTree = "<group>"; };
-		BFB612CD206C37C5002017A8 /* CameraViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController2.swift; sourceTree = "<group>"; };
+		BFB612CB206C3580002017A8 /* PreviewCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCameraVC.swift; sourceTree = "<group>"; };
+		BFB612CD206C37C5002017A8 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BFC857C9206B8C9D009920DD /* SignInImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignInImage.jpg; sourceTree = "<group>"; };
 		BFC857CD206B99A8009920DD /* SignUpImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignUpImage.jpg; sourceTree = "<group>"; };
@@ -177,8 +177,8 @@
 				BFC857D1206BF6A2009920DD /* CommunityVC.swift */,
 				BFC857D3206BF6BC009920DD /* CameraViewController.swift */,
 				BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */,
-				BFB612CB206C3580002017A8 /* PreviewCameraViewController.swift */,
-				BFB612CD206C37C5002017A8 /* CameraViewController2.swift */,
+				BFB612CB206C3580002017A8 /* PreviewCameraVC.swift */,
+				BFB612CD206C37C5002017A8 /* CameraVC.swift */,
 				E6FCB3D0206EA88200FF1F10 /* SettingsVC.swift */,
 			);
 			path = Controller;
@@ -301,7 +301,6 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -312,7 +311,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -345,7 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6FCB3D1206EA88200FF1F10 /* SettingsVC.swift in Sources */,
-				BFB612CE206C37C5002017A8 /* CameraViewController2.swift in Sources */,
+				BFB612CE206C37C5002017A8 /* CameraVC.swift in Sources */,
 				E6FCB3C3206C1AE000FF1F10 /* Constants.swift in Sources */,
 				E6FCB392206AF26200FF1F10 /* hotty.xcdatamodeld in Sources */,
 				E6FCB3AA206AF81900FF1F10 /* ProfileVC.swift in Sources */,
@@ -353,7 +351,7 @@
 				E6FCB3E4206F12E700FF1F10 /* ProgressHUD.m in Sources */,
 				E6FCB3A4206AF75E00FF1F10 /* SignUpVC.swift in Sources */,
 				E6FCB3D3206EB7E100FF1F10 /* AuthService.swift in Sources */,
-				BFB612CC206C3580002017A8 /* PreviewCameraViewController.swift in Sources */,
+				BFB612CC206C3580002017A8 /* PreviewCameraVC.swift in Sources */,
 				E6FCB3B2206AFA1600FF1F10 /* RoundedShadowImageView.swift in Sources */,
 				BFC857D0206BF68D009920DD /* MapVC.swift in Sources */,
 				E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */,

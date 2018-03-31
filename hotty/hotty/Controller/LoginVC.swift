@@ -65,6 +65,7 @@ class LoginVC: UIViewController {
         ProgressHUD.show("Waiting", interaction: false)
         AuthService.signIn(email: universityEmailTxtField.text!, password: passwordTxtField.text!, onSuccess: {
             ProgressHUD.showSuccess("Welcome Back!")
+            print("Signed in")
             self.performSegue(withIdentifier: TO_LOGIN, sender: nil)
         }, onError: { error in
             ProgressHUD.showError("OOPS!")

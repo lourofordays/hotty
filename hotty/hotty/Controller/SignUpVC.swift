@@ -64,7 +64,7 @@ class SignUpVC: UIViewController {
     @IBAction func signUpBtnPressed(_ sender: Any) {
         ProgressHUD.show("Waiting", interaction: false)
         AuthService.signUp(username: usernameTxtField.text!, email: universityEmailTxtField.text!, password: passwordTxtField.text!, university: universityTxtField.text!, onSuccess: {
-            ProgressHUD.showSuccess("Welcome Back!")
+            ProgressHUD.showSuccess("Welcome to your map!")
             self.performSegue(withIdentifier: TO_MY_MAP, sender: nil)
         }, onError: { (errorString) in
             ProgressHUD.showError("OOPS!")

@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-class CameraViewController2 : UIViewController{
+class CameraVC : UIViewController{
 
 
     @IBOutlet weak var camerButton: UIButton!
@@ -89,14 +89,14 @@ class CameraViewController2 : UIViewController{
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showPhoto_Segue" {
-            _ = segue.destination as! PreviewCameraViewController
+            _ = segue.destination as! PreviewCameraVC
             
         }
     }
 
 }
 
-extension CameraViewController2: AVCapturePhotoCaptureDelegate {
+extension CameraVC: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let imageData = photo.fileDataRepresentation() {
             image = UIImage(data: imageData)

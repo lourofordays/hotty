@@ -11,7 +11,7 @@ import FirebaseStorage
 import FirebaseDatabase
 
 
-class PreviewCameraViewController: UIViewController {
+class PreviewCameraVC: UIViewController {
     
     @IBOutlet weak var photo: UIImageView!
     var image: UIImage!
