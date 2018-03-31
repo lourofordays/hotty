@@ -202,7 +202,6 @@
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
                                             <action selector="signUpBtnPressed:" destination="YRT-cX-rGl" eventType="touchUpInside" id="rX7-05-Pce"/>
-                                            <segue destination="LzE-70-NYS" kind="show" identifier="toMyMap" id="KUM-o2-USd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -259,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3bO-IG-g8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-21358" y="-9196"/>
+            <point key="canvasLocation" x="-23174" y="-9960"/>
         </scene>
         <!--SignInVC-->
         <scene sceneID="XEi-Yn-jmT">
@@ -388,7 +387,6 @@
                                         <state key="normal" title="Login"/>
                                         <connections>
                                             <action selector="loginBtnPressed:" destination="opA-OC-58B" eventType="touchUpInside" id="zDb-Tq-Jwb"/>
-                                            <segue destination="LzE-70-NYS" kind="show" identifier="toLogin" id="7VI-kh-0qo"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -435,16 +433,180 @@
             </objects>
             <point key="canvasLocation" x="-23670" y="-9195"/>
         </scene>
-        <!--UITabBarID-->
-        <scene sceneID="7yv-Rz-lK8">
+        <!--Item 1-->
+        <scene sceneID="8GY-CS-mMp">
             <objects>
-                <viewControllerPlaceholder storyboardName="User" referencedIdentifier="UITabBarID" id="LzE-70-NYS" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ffa-ze-VYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="frB-XQ-8JC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 1" id="uzd-9T-sQu"/>
+                </viewController>
+                <tabBarItem title="Item" id="llR-hB-Va8"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ta6-X7-2Nf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22484" y="-8632"/>
+            <point key="canvasLocation" x="-21839" y="-9646"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1yu-6S-c3U">
+            <objects>
+                <tabBarController id="Ha2-9l-s6A" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fYW-2H-gSV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XI3-hi-c8E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22489" y="-9313"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="F0L-BC-0zf">
+            <objects>
+                <viewController id="r1Q-pr-KeJ" customClass="CameraViewController" customModule="hotty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cDA-gl-HeN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="1xV-Ta-T71"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Aperture" selectedImage="Aperture" id="92W-YJ-4T3">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
+                    <connections>
+                        <segue destination="kkZ-cJ-05j" kind="presentation" identifier="Switch to camera" id="17T-we-ZFt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zYA-DY-pJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-21722" y="-8191"/>
+        </scene>
+        <!--Camera View Controller2-->
+        <scene sceneID="9xs-a7-zUa">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewController2" id="kkZ-cJ-05j" customClass="CameraViewController2" customModule="hotty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mJi-RG-jC2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QqC-i8-ZTh">
+                                <rect key="frame" x="130" y="587" width="114" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Aperture"/>
+                                <connections>
+                                    <action selector="cameraBtn_TouchUpInside:" destination="kkZ-cJ-05j" eventType="touchUpInside" id="uws-nV-Q5K"/>
+                                    <action selector="cameraButton_TouchUpInside:" destination="kkZ-cJ-05j" eventType="touchUpInside" id="bQj-ry-Nmb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nPw-89-lrd"/>
+                    </view>
+                    <connections>
+                        <outlet property="CameraViewController2" destination="mJi-RG-jC2" id="lvE-uE-C9h"/>
+                        <outlet property="camerButton" destination="QqC-i8-ZTh" id="A5n-PJ-DYv"/>
+                        <segue destination="5G0-pg-N8K" kind="presentation" identifier="showPhoto_Segue" id="juy-xJ-Ckl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="waj-bT-dcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-21722" y="-7355"/>
+        </scene>
+        <!--Preview Camera View Controller-->
+        <scene sceneID="5bD-vO-dXq">
+            <objects>
+                <viewController id="5G0-pg-N8K" customClass="PreviewCameraViewController" customModule="hotty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rqQ-l4-ZJQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wRV-zp-iKW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mml-OP-OqH">
+                                <rect key="frame" x="284" y="578" width="75" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="noun_105496_cc.png"/>
+                                <connections>
+                                    <action selector="sendBtn_TouchUpInside:" destination="5G0-pg-N8K" eventType="touchUpInside" id="VHt-Uy-7Nu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rz5-Te-F0t">
+                                <rect key="frame" x="-20" y="0.0" width="114" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Close"/>
+                                <connections>
+                                    <action selector="cancelBtn_TouchUpInside:" destination="5G0-pg-N8K" eventType="touchUpInside" id="c8a-tU-fIg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wRV-zp-iKW" firstAttribute="top" secondItem="rqQ-l4-ZJQ" secondAttribute="top" id="Nje-r7-OFZ"/>
+                            <constraint firstItem="wRV-zp-iKW" firstAttribute="leading" secondItem="EJg-MP-Fhb" secondAttribute="leading" id="dhs-9d-OzG"/>
+                            <constraint firstItem="wRV-zp-iKW" firstAttribute="trailing" secondItem="EJg-MP-Fhb" secondAttribute="trailing" id="eea-3G-PPt"/>
+                            <constraint firstItem="wRV-zp-iKW" firstAttribute="bottom" secondItem="EJg-MP-Fhb" secondAttribute="bottom" id="kXA-wE-7Jt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EJg-MP-Fhb"/>
+                    </view>
+                    <connections>
+                        <outlet property="photo" destination="wRV-zp-iKW" id="g27-z5-gYE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfU-UK-JSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-21722" y="-6530"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="IRW-ct-fnq">
+            <objects>
+                <viewController id="vea-QF-eiV" customClass="ProfileViewController" customModule="hotty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Men-OQ-qmo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uty-1w-dFq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="Profile" id="xfe-bz-fvn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hz2-pw-3zJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20308" y="-8136"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="aKk-u5-hjr">
+            <objects>
+                <viewController id="a2j-8n-hs8" customClass="MapVC" customModule="hotty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NyR-b5-FIJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ozI-bW-RxW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ozI-bW-RxW" firstAttribute="trailing" secondItem="htB-pT-71D" secondAttribute="trailing" id="2Tv-b7-b1h"/>
+                            <constraint firstItem="ozI-bW-RxW" firstAttribute="leading" secondItem="htB-pT-71D" secondAttribute="leading" id="DVb-pT-T5T"/>
+                            <constraint firstItem="ozI-bW-RxW" firstAttribute="top" secondItem="NyR-b5-FIJ" secondAttribute="top" id="LDj-FJ-zmO"/>
+                            <constraint firstAttribute="bottom" secondItem="ozI-bW-RxW" secondAttribute="bottom" id="S3c-rR-aYd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="htB-pT-71D"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home-1" id="NQn-o8-2uo"/>
+                    <connections>
+                        <outlet property="mapView" destination="ozI-bW-RxW" id="86r-Wa-Itq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DpI-jK-lpO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23079" y="-8170"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="7VI-kh-0qo"/>
-    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Aperture" width="60" height="60"/>
+        <image name="Close" width="60" height="60"/>
+        <image name="Home-1" width="21" height="23"/>
+        <image name="Profile" width="60" height="60"/>
+        <image name="noun_105496_cc.png" width="700" height="700"/>
+    </resources>
 </document>
