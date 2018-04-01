@@ -21,7 +21,7 @@ class PreviewCameraVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         photo.image = self.image
-        detectPhoto(image: photo.image!)
+//        detectPhoto(image: photo.image!)
 
         // Do any additional setup after loading the view.
     }
@@ -32,6 +32,7 @@ class PreviewCameraVC: UIViewController {
     }
     
     @IBAction func sendBtn_TouchUpInside(_ sender: Any) {
+        ProgressHUD.show("Posting", interaction: false)
         let photo: UIImage = self.image
         if self.image == self.image,  let imageData = UIImageJPEGRepresentation(photo, 0.1) {
             let photoIdString = NSUUID().uuidString
@@ -64,32 +65,32 @@ class PreviewCameraVC: UIViewController {
         }
     )}
 
-    func detectPhoto(image: UIImage!) {
-        guard let ciImage = CIImage(image: image) else {
-            fatalError("Could not convert UIImage to CIImage")
-        }
-        guard let model = try? VNCoreMLModel(for: Inceptionv3().model)
-            else {
-            fatalError("Cannot identify object")
-        }
-        let request = VNCoreMLRequest(model: model) { (vnRequest, error) in
-            print(vnRequest.results?.first as Any)
-            guard let results = vnRequest.results as? [VNClassificationObservation] else {
-                fatalError("Unexpected Result")
-            }
-            print(results.first!.confidence)
-            print(results.first!.identifier)
-        }
-
-        let handler = VNImageRequestHandler(ciImage: ciImage)
-        DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive).async {
-            do {
-                try handler.perform([request])
-            }   catch {
-                print(error)
-            }
-        }
-    }
+//    func detectPhoto(image: UIImage!) {
+//        guard let ciImage = CIImage(image: image) else {
+//            fatalError("Could not convert UIImage to CIImage")
+//        }
+//        guard let model = try? VNCoreMLModel(for: Inceptionv3().model)
+//            else {
+//            fatalError("Cannot identify object")
+//        }
+//        let request = VNCoreMLRequest(model: model) { (vnRequest, error) in
+//            print(vnRequest.results?.first as Any)
+//            guard let results = vnRequest.results as? [VNClassificationObservation] else {
+//                fatalError("Unexpected Result")
+//            }
+//            print(results.first!.confidence)
+//            print(results.first!.identifier)
+//        }
+//
+//        let handler = VNImageRequestHandler(ciImage: ciImage)
+//        DispatchQueue.global(qos: DispatchQoS.QoSClass.userInteractive).async {
+//            do {
+//                try handler.perform([request])
+//            }   catch {
+//                print(error)
+//            }
+//        }
+//    }
 }
 
 

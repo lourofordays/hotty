@@ -508,7 +508,7 @@
                         <viewLayoutGuide key="safeArea" id="AEh-Fg-SXA"/>
                     </view>
                     <connections>
-                        <outlet property="camerButton" destination="XzC-iL-reX" id="Vzb-T6-k5W"/>
+                        <outlet property="cameraButton" destination="XzC-iL-reX" id="QIq-iL-6wH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ssV-Al-5Ya" userLabel="First Responder" sceneMemberID="firstResponder"/>

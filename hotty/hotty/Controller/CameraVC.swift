@@ -11,16 +11,23 @@ import AVFoundation
 class CameraVC : UIViewController{
 
 
-    @IBOutlet weak var camerButton: UIButton!
+    @IBOutlet weak var cameraButton: UIButton!
 
     var captureSession = AVCaptureSession()
     var backCamera: AVCaptureDevice?
     var frontCamera: AVCaptureDevice?
-    var currentCamrera: AVCaptureDevice?
+    var currentDevice: AVCaptureDevice?
 
     var photoOutput: AVCapturePhotoOutput?
+    
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
+    
     var image: UIImage?
+    
+    var toggleCameraGestureRecognizer = UISwipeGestureRecognizer()
+    
+    var zoomInGestureRecognizer = UISwipeGestureRecognizer()
+    var zoomOutGestureRecognizer = UISwipeGestureRecognizer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +37,33 @@ class CameraVC : UIViewController{
         setupInputOutput()
         setupPreviewLayer()
         startRunningCaptureSession()
-
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        toggleCameraGestureRecognizer.direction = .right
+        toggleCameraGestureRecognizer.addTarget(self, action: #selector(self.switchCamera))
+        view.addGestureRecognizer(toggleCameraGestureRecognizer)
+        
+        toggleCameraGestureRecognizer.direction = .left
+        toggleCameraGestureRecognizer.addTarget(self, action: #selector(self.switchCamera))
+        view.addGestureRecognizer(toggleCameraGestureRecognizer)
+        
+        // Zoom In recognizer
+        zoomInGestureRecognizer.direction = .up
+        zoomInGestureRecognizer.addTarget(self, action: #selector(zoomIn))
+        view.addGestureRecognizer(zoomInGestureRecognizer)
+        
+        // Zoom Out recognizer
+        zoomOutGestureRecognizer.direction = .down
+        zoomOutGestureRecognizer.addTarget(self, action: #selector(zoomOut))
+        view.addGestureRecognizer(zoomOutGestureRecognizer)
+        styleCaptureButton()
+        
+    }
+    
+    func styleCaptureButton() {
+        cameraButton.layer.borderColor = UIColor.white.cgColor
+        cameraButton.layer.borderWidth = 5
+        cameraButton.clipsToBounds = true
+        cameraButton.layer.cornerRadius = min(cameraButton.frame.width, cameraButton.frame.height) / 2
     }
 
     func setupCaptureSession() {
@@ -50,12 +82,12 @@ class CameraVC : UIViewController{
             }
         }
 
-        currentCamrera = backCamera
+        currentDevice = backCamera
     }
 
     func setupInputOutput() {
         do {
-            let captureDeviceInput = try AVCaptureDeviceInput(device: currentCamrera!)
+            let captureDeviceInput = try AVCaptureDeviceInput(device: currentDevice!)
             captureSession.addInput(captureDeviceInput)
             photoOutput = AVCapturePhotoOutput()
             photoOutput?.setPreparedPhotoSettingsArray([AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])], completionHandler: nil)
@@ -76,13 +108,69 @@ class CameraVC : UIViewController{
     func startRunningCaptureSession() {
         captureSession.startRunning()
     }
+    
+    @objc func switchCamera() {
+        captureSession.beginConfiguration()
+        
+        // Change the device based on the current camera
+        let newDevice = (currentDevice?.position == AVCaptureDevice.Position.back) ? frontCamera : backCamera
+        
+        // Remove all inputs from the session
+        for input in captureSession.inputs {
+            captureSession.removeInput(input as! AVCaptureDeviceInput)
+        }
+        
+        // Change to the new input
+        let cameraInput:AVCaptureDeviceInput
+        do {
+            cameraInput = try AVCaptureDeviceInput(device: newDevice!)
+        } catch {
+            print(error)
+            return
+        }
+        
+        if captureSession.canAddInput(cameraInput) {
+            captureSession.addInput(cameraInput)
+        }
+        
+        currentDevice = newDevice
+        captureSession.commitConfiguration()
+    }
+    
+    @objc func zoomIn() {
+        if let zoomFactor = currentDevice?.videoZoomFactor {
+            if zoomFactor < 5.0 {
+                let newZoomFactor = min(zoomFactor + 1.0, 5.0)
+                do {
+                    try currentDevice?.lockForConfiguration()
+                    currentDevice?.ramp(toVideoZoomFactor: newZoomFactor, withRate: 1.0)
+                    currentDevice?.unlockForConfiguration()
+                } catch {
+                    print(error)
+                }
+            }
+        }
+    }
+    
+    @objc func zoomOut() {
+        if let zoomFactor = currentDevice?.videoZoomFactor {
+            if zoomFactor > 1.0 {
+                let newZoomFactor = max(zoomFactor - 1.0, 1.0)
+                do {
+                    try currentDevice?.lockForConfiguration()
+                    currentDevice?.ramp(toVideoZoomFactor: newZoomFactor, withRate: 1.0)
+                    currentDevice?.unlockForConfiguration()
+                } catch {
+                    print(error)
+                }
+            }
+        }
+    }
 
-    @IBAction func cameraButton_TouchUpInside(_ sender: Any)
-
-    {
+    @IBAction func cameraButton_TouchUpInside(_ sender: Any) {
         let settings = AVCapturePhotoSettings()
-        photoOutput?.capturePhoto(with: settings, delegate: self as AVCapturePhotoCaptureDelegate)
-        performSegue(withIdentifier: "showPhoto_Segue", sender: nil)
+        photoOutput?.capturePhoto(with: settings, delegate: self)
+        //performSegue(withIdentifier: "showPhoto_Segue", sender: nil)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -99,7 +187,7 @@ extension CameraVC: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let imageData = photo.fileDataRepresentation() {
             image = UIImage(data: imageData)
-            //performSegue(withIdentifier: "showPhoto_Segue", sender: nil)
+            performSegue(withIdentifier: "showPhoto_Segue", sender: nil)
         }
     }
 }
