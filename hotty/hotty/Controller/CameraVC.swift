@@ -19,9 +19,7 @@ class CameraVC : UIViewController{
     var currentCamrera: AVCaptureDevice?
 
     var photoOutput: AVCapturePhotoOutput?
-
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
-
     var image: UIImage?
 
     override func viewDidLoad() {
@@ -84,12 +82,13 @@ class CameraVC : UIViewController{
     {
         let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self as AVCapturePhotoCaptureDelegate)
-        // performSegue(withIdentifier: "showPhoto_Segue", sender: nil)
+        performSegue(withIdentifier: "showPhoto_Segue", sender: nil)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showPhoto_Segue" {
-            _ = segue.destination as! PreviewCameraVC
+            let previewVC = segue.destination as! PreviewCameraVC
+            previewVC.image = self.image
             
         }
     }
@@ -100,7 +99,7 @@ extension CameraVC: AVCapturePhotoCaptureDelegate {
     func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let imageData = photo.fileDataRepresentation() {
             image = UIImage(data: imageData)
-            performSegue(withIdentifier: "showPhoto_Segue", sender: nil)
+            //performSegue(withIdentifier: "showPhoto_Segue", sender: nil)
         }
     }
 }

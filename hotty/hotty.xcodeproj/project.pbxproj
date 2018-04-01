@@ -20,6 +20,7 @@
 		BFC857D4206BF6BC009920DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D3206BF6BC009920DD /* CameraViewController.swift */; };
 		BFC857D6206BF6D3009920DD /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D5206BF6D3009920DD /* SearchVC.swift */; };
 		D3154D3C113B32E75AEFC2A8 /* Pods_hotty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7CB149776E429827B36034 /* Pods_hotty.framework */; };
+		E60599B220710C6700B48120 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E60599B120710C6700B48120 /* Inceptionv3.mlmodel */; };
 		E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB389206AF26200FF1F10 /* AppDelegate.swift */; };
 		E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB38D206AF26200FF1F10 /* Main.storyboard */; };
 		E6FCB392206AF26200FF1F10 /* hotty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB390206AF26200FF1F10 /* hotty.xcdatamodeld */; };
@@ -57,6 +58,7 @@
 		BFC857D1206BF6A2009920DD /* CommunityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityVC.swift; sourceTree = "<group>"; };
 		BFC857D3206BF6BC009920DD /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		BFC857D5206BF6D3009920DD /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		E60599B120710C6700B48120 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		E6FCB386206AF26200FF1F10 /* hotty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6FCB389206AF26200FF1F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6FCB38E206AF26200FF1F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				E6FCB38D206AF26200FF1F10 /* Main.storyboard */,
 				E6FCB393206AF26200FF1F10 /* Assets.xcassets */,
 				E6FCB395206AF26200FF1F10 /* LaunchScreen.storyboard */,
+				E60599B120710C6700B48120 /* Inceptionv3.mlmodel */,
 				E6FCB398206AF26200FF1F10 /* Info.plist */,
 				E6FCB390206AF26200FF1F10 /* hotty.xcdatamodeld */,
 				BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */,
@@ -364,6 +367,7 @@
 				E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */,
 				E6FCB3B1206AFA1600FF1F10 /* InsetTextField.swift in Sources */,
 				E6FCB3B3206AFA1600FF1F10 /* RoundedShadowButton.swift in Sources */,
+				E60599B220710C6700B48120 /* Inceptionv3.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
