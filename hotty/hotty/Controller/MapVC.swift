@@ -14,12 +14,26 @@ class MapVC: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
     
+    var eggAnnotationPin = MKPointAnnotation()
+    
+    
     var locationManager = CLLocationManager()
     let authorizationStatus = CLLocationManager.authorizationStatus()
     let regionRadius: Double = 500
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.mapView.delegate = self
+        mapView.showsUserLocation = true
+        
+        let eggAnnotationCoordinates = CLLocationCoordinate2DMake(46.5606,6.6825)
+        eggAnnotationPin.coordinate = eggAnnotationCoordinates
+        eggAnnotationPin.title = "EasterEgg"
+        mapView.addAnnotation(eggAnnotationPin)
+        
+        print("Egg")
+    
+        
         view.backgroundColor = .white
         mapView.delegate = self
         locationManager.delegate = self
@@ -27,6 +41,31 @@ class MapVC: UIViewController {
         configureLocationServices()
         
     }
+    
+    func mapView(_mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if !(annotation is MKPointAnnotation) {
+            print("NOT REGISTERED AS MKPOINT ANNOTATION")
+            return nil
+            
+            
+        
+        }
+        let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "EggIdentifier")
+        if annotationView == nil {
+            annotationView!.canShowCallout = true
+            
+        }
+        else {
+            annotationView!.annotation = annotation
+            
+        }
+        annotationView!.image = UIImage(named: "easter-egg (1)")
+        
+        return annotationView
+        
+    
+    }
+    
     
 }
 
