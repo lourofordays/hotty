@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF54FF242072907300AC44F0 /* retro.json in Resources */ = {isa = PBXBuildFile; fileRef = BF54FF232072907300AC44F0 /* retro.json */; };
+		BF5CEF8B2075574F00437106 /* HeaderProfileCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5CEF8A2075574F00437106 /* HeaderProfileCollectionReusableView.swift */; };
+		BFABA20D207753DD00EC4BAD /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA20C207753DC00EC4BAD /* UserApi.swift */; };
+		BFABA2162077562C00EC4BAD /* MyPostsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA20E2077562900EC4BAD /* MyPostsApi.swift */; };
+		BFABA2172077562C00EC4BAD /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA20F2077562A00EC4BAD /* HelperService.swift */; };
+		BFABA2182077562C00EC4BAD /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2102077562A00EC4BAD /* Api.swift */; };
+		BFABA2192077562C00EC4BAD /* PostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2112077562A00EC4BAD /* PostApi.swift */; };
+		BFABA21A2077562C00EC4BAD /* CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2122077562B00EC4BAD /* CommentApi.swift */; };
+		BFABA21B2077562C00EC4BAD /* Post_CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2132077562B00EC4BAD /* Post_CommentApi.swift */; };
+		BFABA21C2077562C00EC4BAD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2142077562B00EC4BAD /* Config.swift */; };
+		BFABA21D2077562C00EC4BAD /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2152077562B00EC4BAD /* UserApi.swift */; };
+		BFABA21F2077563D00EC4BAD /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA21E2077563D00EC4BAD /* PhotoCollectionViewCell.swift */; };
 		BFB612BC206C054F002017A8 /* transparent-image8.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB612BB206C054F002017A8 /* transparent-image8.png */; };
 		BFB612C2206C0C27002017A8 /* DNMainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */; };
 		BFB612CA206C3498002017A8 /* noun_105496_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB612C9206C3497002017A8 /* noun_105496_cc.png */; };
@@ -46,6 +58,18 @@
 		11EFD7175A7463B67FA92F3A /* Pods-hotty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hotty.release.xcconfig"; path = "Pods/Target Support Files/Pods-hotty/Pods-hotty.release.xcconfig"; sourceTree = "<group>"; };
 		7708ED7576CDA804FDDEA177 /* Pods-hotty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hotty.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hotty/Pods-hotty.debug.xcconfig"; sourceTree = "<group>"; };
 		9E7CB149776E429827B36034 /* Pods_hotty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hotty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF54FF232072907300AC44F0 /* retro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = retro.json; sourceTree = "<group>"; };
+		BF5CEF8A2075574F00437106 /* HeaderProfileCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfileCollectionReusableView.swift; sourceTree = "<group>"; };
+		BFABA20C207753DC00EC4BAD /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		BFABA20E2077562900EC4BAD /* MyPostsApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPostsApi.swift; sourceTree = "<group>"; };
+		BFABA20F2077562A00EC4BAD /* HelperService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
+		BFABA2102077562A00EC4BAD /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		BFABA2112077562A00EC4BAD /* PostApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostApi.swift; sourceTree = "<group>"; };
+		BFABA2122077562B00EC4BAD /* CommentApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentApi.swift; sourceTree = "<group>"; };
+		BFABA2132077562B00EC4BAD /* Post_CommentApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post_CommentApi.swift; sourceTree = "<group>"; };
+		BFABA2142077562B00EC4BAD /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		BFABA2152077562B00EC4BAD /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserApi.swift; path = "../../../../../../Downloads/49 2/InstagramClone/InstagramClone/UserApi.swift"; sourceTree = "<group>"; };
+		BFABA21E2077563D00EC4BAD /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		BFB612BB206C054F002017A8 /* transparent-image8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent-image8.png"; sourceTree = "<group>"; };
 		BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNMainTabVC.swift; sourceTree = "<group>"; };
 		BFB612C9206C3497002017A8 /* noun_105496_cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_105496_cc.png; sourceTree = "<group>"; };
@@ -120,6 +144,7 @@
 				BFC857CD206B99A8009920DD /* SignUpImage.jpg */,
 				BFB612BB206C054F002017A8 /* transparent-image8.png */,
 				BFB612C9206C3497002017A8 /* noun_105496_cc.png */,
+				BF54FF232072907300AC44F0 /* retro.json */,
 				E6FCB388206AF26200FF1F10 /* hotty */,
 				E6FCB387206AF26200FF1F10 /* Products */,
 				AF9FD6ADC30B64C2F9E6BE17 /* Pods */,
@@ -160,11 +185,22 @@
 		E6FCB39F206AF2E400FF1F10 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BFABA20C207753DC00EC4BAD /* UserApi.swift */,
+				BFABA2102077562A00EC4BAD /* Api.swift */,
+				BFABA2122077562B00EC4BAD /* CommentApi.swift */,
+				BFABA2142077562B00EC4BAD /* Config.swift */,
+				BFABA20F2077562A00EC4BAD /* HelperService.swift */,
+				BFABA20E2077562900EC4BAD /* MyPostsApi.swift */,
+				BFABA2132077562B00EC4BAD /* Post_CommentApi.swift */,
+				BFABA2112077562A00EC4BAD /* PostApi.swift */,
+				BFABA2152077562B00EC4BAD /* UserApi.swift */,
 				E6FCB3AC206AFA1500FF1F10 /* InsetTextField.swift */,
 				E6FCB3AB206AFA1500FF1F10 /* KeyboardBoundView.swift */,
 				E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */,
 				E6FCB3AE206AFA1600FF1F10 /* RoundedShadowButton.swift */,
 				E6FCB3AD206AFA1500FF1F10 /* RoundedShadowImageView.swift */,
+				BF5CEF8A2075574F00437106 /* HeaderProfileCollectionReusableView.swift */,
+				BFABA21E2077563D00EC4BAD /* PhotoCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,9 +216,9 @@
 				BFC857D1206BF6A2009920DD /* CommunityVC.swift */,
 				BFC857D3206BF6BC009920DD /* CameraViewController.swift */,
 				BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */,
+				E6FCB3D0206EA88200FF1F10 /* SettingsVC.swift */,
 				BFB612CB206C3580002017A8 /* PreviewCameraVC.swift */,
 				BFB612CD206C37C5002017A8 /* CameraVC.swift */,
-				E6FCB3D0206EA88200FF1F10 /* SettingsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -264,6 +300,7 @@
 				BFB612D0206D15AE002017A8 /* GoogleService-Info.plist in Resources */,
 				BFB612CA206C3498002017A8 /* noun_105496_cc.png in Resources */,
 				E6FCB394206AF26200FF1F10 /* Assets.xcassets in Resources */,
+				BF54FF242072907300AC44F0 /* retro.json in Resources */,
 				BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */,
 				E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */,
 				BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */,
@@ -304,6 +341,7 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -314,6 +352,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -329,9 +368,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hotty/Pods-hotty-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -345,6 +391,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5CEF8B2075574F00437106 /* HeaderProfileCollectionReusableView.swift in Sources */,
+				BFABA2192077562C00EC4BAD /* PostApi.swift in Sources */,
 				E6FCB3D1206EA88200FF1F10 /* SettingsVC.swift in Sources */,
 				BFB612CE206C37C5002017A8 /* CameraVC.swift in Sources */,
 				E6FCB3C3206C1AE000FF1F10 /* Constants.swift in Sources */,
@@ -353,20 +401,29 @@
 				BFC857D4206BF6BC009920DD /* CameraViewController.swift in Sources */,
 				E6FCB3E4206F12E700FF1F10 /* ProgressHUD.m in Sources */,
 				E6FCB3A4206AF75E00FF1F10 /* SignUpVC.swift in Sources */,
+				BFABA21B2077562C00EC4BAD /* Post_CommentApi.swift in Sources */,
 				E6FCB3D3206EB7E100FF1F10 /* AuthService.swift in Sources */,
 				BFB612CC206C3580002017A8 /* PreviewCameraVC.swift in Sources */,
+				BFABA21A2077562C00EC4BAD /* CommentApi.swift in Sources */,
+				BFABA20D207753DD00EC4BAD /* UserApi.swift in Sources */,
 				E6FCB3B2206AFA1600FF1F10 /* RoundedShadowImageView.swift in Sources */,
 				BFC857D0206BF68D009920DD /* MapVC.swift in Sources */,
 				E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */,
 				E6FCB3B0206AFA1600FF1F10 /* KeyboardBoundView.swift in Sources */,
+				BFABA2172077562C00EC4BAD /* HelperService.swift in Sources */,
 				BFC857D6206BF6D3009920DD /* SearchVC.swift in Sources */,
+				BFABA21F2077563D00EC4BAD /* PhotoCollectionViewCell.swift in Sources */,
+				BFABA21D2077562C00EC4BAD /* UserApi.swift in Sources */,
 				E6FCB3A6206AF79800FF1F10 /* LoginVC.swift in Sources */,
+				BFABA2162077562C00EC4BAD /* MyPostsApi.swift in Sources */,
 				BFB612C2206C0C27002017A8 /* DNMainTabVC.swift in Sources */,
 				BFC857D2206BF6A2009920DD /* CommunityVC.swift in Sources */,
 				E6FCB3D5206F0CAF00FF1F10 /* Config.swift in Sources */,
 				E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */,
 				E6FCB3B1206AFA1600FF1F10 /* InsetTextField.swift in Sources */,
 				E6FCB3B3206AFA1600FF1F10 /* RoundedShadowButton.swift in Sources */,
+				BFABA21C2077562C00EC4BAD /* Config.swift in Sources */,
+				BFABA2182077562C00EC4BAD /* Api.swift in Sources */,
 				E60599B220710C6700B48120 /* Inceptionv3.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,7 +568,7 @@
 				INFOPLIST_FILE = hotty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty1234;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty89;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hotty/hotty-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -531,7 +588,7 @@
 				INFOPLIST_FILE = hotty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty1234;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty89;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hotty/hotty-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

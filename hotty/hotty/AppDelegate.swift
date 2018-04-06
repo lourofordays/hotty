@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 import Firebase
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +23,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = .black
         UITabBar.appearance().backgroundColor=UIColor.clear
         FirebaseApp.configure()
+        
+        GMSServices.provideAPIKey("")
+        GMSPlacesClient.provideAPIKey("AIzaSyBMFsT8K9b8_LbHd2JQbOBJYlNFy1-soEU")
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        if let window = self.window {
+            window.backgroundColor = UIColor.white
+            
+        
+        }
+        
+        
         return true
     }
 
