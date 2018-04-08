@@ -1,9 +1,10 @@
-/*
-
-import Foundation
-import FirebaseDatabase
-class MyPostsApi {
-    var REF_MYPOSTS = FIRDatabase.database().reference().child("myPosts")
-    
-}
-*/
+//
+//
+//import Foundation
+//import FirebaseDatabase
+//class MyPostsApi {
+//    var REF_MYPOSTS = Database.database().reference().child("myPosts")
+//    
+//}
+//
+//

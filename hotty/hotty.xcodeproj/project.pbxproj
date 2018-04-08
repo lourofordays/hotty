@@ -9,15 +9,12 @@
 /* Begin PBXBuildFile section */
 		BF54FF242072907300AC44F0 /* retro.json in Resources */ = {isa = PBXBuildFile; fileRef = BF54FF232072907300AC44F0 /* retro.json */; };
 		BF5CEF8B2075574F00437106 /* HeaderProfileCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5CEF8A2075574F00437106 /* HeaderProfileCollectionReusableView.swift */; };
-		BFABA20D207753DD00EC4BAD /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA20C207753DC00EC4BAD /* UserApi.swift */; };
 		BFABA2162077562C00EC4BAD /* MyPostsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA20E2077562900EC4BAD /* MyPostsApi.swift */; };
 		BFABA2172077562C00EC4BAD /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA20F2077562A00EC4BAD /* HelperService.swift */; };
 		BFABA2182077562C00EC4BAD /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2102077562A00EC4BAD /* Api.swift */; };
 		BFABA2192077562C00EC4BAD /* PostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2112077562A00EC4BAD /* PostApi.swift */; };
 		BFABA21A2077562C00EC4BAD /* CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2122077562B00EC4BAD /* CommentApi.swift */; };
 		BFABA21B2077562C00EC4BAD /* Post_CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2132077562B00EC4BAD /* Post_CommentApi.swift */; };
-		BFABA21C2077562C00EC4BAD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2142077562B00EC4BAD /* Config.swift */; };
-		BFABA21D2077562C00EC4BAD /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA2152077562B00EC4BAD /* UserApi.swift */; };
 		BFABA21F2077563D00EC4BAD /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFABA21E2077563D00EC4BAD /* PhotoCollectionViewCell.swift */; };
 		BFB612BC206C054F002017A8 /* transparent-image8.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB612BB206C054F002017A8 /* transparent-image8.png */; };
 		BFB612C2206C0C27002017A8 /* DNMainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */; };
@@ -33,6 +30,19 @@
 		BFC857D6206BF6D3009920DD /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D5206BF6D3009920DD /* SearchVC.swift */; };
 		D3154D3C113B32E75AEFC2A8 /* Pods_hotty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7CB149776E429827B36034 /* Pods_hotty.framework */; };
 		E60599B220710C6700B48120 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E60599B120710C6700B48120 /* Inceptionv3.mlmodel */; };
+		E6E82F222077B0B200ADC062 /* StoryContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F212077B0B200ADC062 /* StoryContentVC.swift */; };
+		E6E82F242077B0E500ADC062 /* StoryViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F232077B0E500ADC062 /* StoryViewVC.swift */; };
+		E6E82F262077B12500ADC062 /* SegmentedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F252077B12500ADC062 /* SegmentedProgressBar.swift */; };
+		E6E82F282077B17D00ADC062 /* usersCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F272077B17D00ADC062 /* usersCollectionView.swift */; };
+		E6E82F2A2077EA7B00ADC062 /* userApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F292077EA7B00ADC062 /* userApi.swift */; };
+		E6E82F2F20783CA400ADC062 /* output3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E6E82F2C20783CA300ADC062 /* output3.mp4 */; };
+		E6E82F3020783CA400ADC062 /* output2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E6E82F2D20783CA300ADC062 /* output2.mp4 */; };
+		E6E82F3120783CA400ADC062 /* output.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E6E82F2E20783CA400ADC062 /* output.mp4 */; };
+		E6E82F44207A7FCD00ADC062 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F39207A7FCC00ADC062 /* GFBase32Utils.m */; };
+		E6E82F45207A7FCD00ADC062 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F3B207A7FCC00ADC062 /* GeoFire.m */; };
+		E6E82F46207A7FCD00ADC062 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F3C207A7FCC00ADC062 /* GFGeoHashQuery.m */; };
+		E6E82F47207A7FCD00ADC062 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F3D207A7FCC00ADC062 /* GFQuery.m */; };
+		E6E82F48207A7FCD00ADC062 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F3E207A7FCC00ADC062 /* GFGeoHash.m */; };
 		E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB389206AF26200FF1F10 /* AppDelegate.swift */; };
 		E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB38D206AF26200FF1F10 /* Main.storyboard */; };
 		E6FCB392206AF26200FF1F10 /* hotty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB390206AF26200FF1F10 /* hotty.xcdatamodeld */; };
@@ -60,15 +70,12 @@
 		9E7CB149776E429827B36034 /* Pods_hotty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hotty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF54FF232072907300AC44F0 /* retro.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = retro.json; sourceTree = "<group>"; };
 		BF5CEF8A2075574F00437106 /* HeaderProfileCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderProfileCollectionReusableView.swift; sourceTree = "<group>"; };
-		BFABA20C207753DC00EC4BAD /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		BFABA20E2077562900EC4BAD /* MyPostsApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPostsApi.swift; sourceTree = "<group>"; };
 		BFABA20F2077562A00EC4BAD /* HelperService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
 		BFABA2102077562A00EC4BAD /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		BFABA2112077562A00EC4BAD /* PostApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostApi.swift; sourceTree = "<group>"; };
 		BFABA2122077562B00EC4BAD /* CommentApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentApi.swift; sourceTree = "<group>"; };
 		BFABA2132077562B00EC4BAD /* Post_CommentApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post_CommentApi.swift; sourceTree = "<group>"; };
-		BFABA2142077562B00EC4BAD /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		BFABA2152077562B00EC4BAD /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserApi.swift; path = "../../../../../../Downloads/49 2/InstagramClone/InstagramClone/UserApi.swift"; sourceTree = "<group>"; };
 		BFABA21E2077563D00EC4BAD /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		BFB612BB206C054F002017A8 /* transparent-image8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transparent-image8.png"; sourceTree = "<group>"; };
 		BFB612C1206C0C27002017A8 /* DNMainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNMainTabVC.swift; sourceTree = "<group>"; };
@@ -83,6 +90,29 @@
 		BFC857D3206BF6BC009920DD /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		BFC857D5206BF6D3009920DD /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		E60599B120710C6700B48120 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		E6E82F212077B0B200ADC062 /* StoryContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryContentVC.swift; sourceTree = "<group>"; };
+		E6E82F232077B0E500ADC062 /* StoryViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewVC.swift; sourceTree = "<group>"; };
+		E6E82F252077B12500ADC062 /* SegmentedProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedProgressBar.swift; sourceTree = "<group>"; };
+		E6E82F272077B17D00ADC062 /* usersCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersCollectionView.swift; sourceTree = "<group>"; };
+		E6E82F292077EA7B00ADC062 /* userApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userApi.swift; sourceTree = "<group>"; };
+		E6E82F2C20783CA300ADC062 /* output3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = output3.mp4; path = "../../../../../../Downloads/Instagram-stories-master/InstagramStories/videos/output3.mp4"; sourceTree = "<group>"; };
+		E6E82F2D20783CA300ADC062 /* output2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = output2.mp4; path = "../../../../../../Downloads/Instagram-stories-master/InstagramStories/videos/output2.mp4"; sourceTree = "<group>"; };
+		E6E82F2E20783CA400ADC062 /* output.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = output.mp4; path = "../../../../../../Downloads/Instagram-stories-master/InstagramStories/videos/output.mp4"; sourceTree = "<group>"; };
+		E6E82F33207A7FCC00ADC062 /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		E6E82F35207A7FCC00ADC062 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		E6E82F36207A7FCC00ADC062 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		E6E82F37207A7FCC00ADC062 /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		E6E82F38207A7FCC00ADC062 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		E6E82F39207A7FCC00ADC062 /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		E6E82F3A207A7FCC00ADC062 /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		E6E82F3B207A7FCC00ADC062 /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		E6E82F3C207A7FCC00ADC062 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		E6E82F3D207A7FCC00ADC062 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		E6E82F3E207A7FCC00ADC062 /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		E6E82F40207A7FCC00ADC062 /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		E6E82F41207A7FCC00ADC062 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		E6E82F42207A7FCC00ADC062 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		E6E82F43207A7FCC00ADC062 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
 		E6FCB386206AF26200FF1F10 /* hotty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6FCB389206AF26200FF1F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6FCB38E206AF26200FF1F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -137,6 +167,54 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E6E82F2B20783C8100ADC062 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				E6E82F2E20783CA400ADC062 /* output.mp4 */,
+				E6E82F2D20783CA300ADC062 /* output2.mp4 */,
+				E6E82F2C20783CA300ADC062 /* output3.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		E6E82F32207A7FCC00ADC062 /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				E6E82F33207A7FCC00ADC062 /* GeoFire-Prefix.pch */,
+				E6E82F34207A7FCC00ADC062 /* Implementation */,
+				E6E82F3F207A7FCC00ADC062 /* API */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		E6E82F34207A7FCC00ADC062 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				E6E82F35207A7FCC00ADC062 /* GFBase32Utils.h */,
+				E6E82F36207A7FCC00ADC062 /* GFGeoHashQuery.h */,
+				E6E82F37207A7FCC00ADC062 /* GFGeoHash.h */,
+				E6E82F38207A7FCC00ADC062 /* GFQuery+Private.h */,
+				E6E82F39207A7FCC00ADC062 /* GFBase32Utils.m */,
+				E6E82F3A207A7FCC00ADC062 /* GeoFire+Private.h */,
+				E6E82F3B207A7FCC00ADC062 /* GeoFire.m */,
+				E6E82F3C207A7FCC00ADC062 /* GFGeoHashQuery.m */,
+				E6E82F3D207A7FCC00ADC062 /* GFQuery.m */,
+				E6E82F3E207A7FCC00ADC062 /* GFGeoHash.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		E6E82F3F207A7FCC00ADC062 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E6E82F40207A7FCC00ADC062 /* GFRegionQuery.h */,
+				E6E82F41207A7FCC00ADC062 /* GeoFire.h */,
+				E6E82F42207A7FCC00ADC062 /* GFQuery.h */,
+				E6E82F43207A7FCC00ADC062 /* GFCircleQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		E6FCB37D206AF26200FF1F10 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +241,7 @@
 		E6FCB388206AF26200FF1F10 /* hotty */ = {
 			isa = PBXGroup;
 			children = (
+				E6E82F2B20783C8100ADC062 /* Videos */,
 				E6FCB3B8206C140B00FF1F10 /* Utilities */,
 				E6FCB39F206AF2E400FF1F10 /* View */,
 				E6FCB3A0206AF2EC00FF1F10 /* Controller */,
@@ -171,6 +250,7 @@
 				E60599B120710C6700B48120 /* Inceptionv3.mlmodel */,
 				E6FCB393206AF26200FF1F10 /* Assets.xcassets */,
 				E6FCB395206AF26200FF1F10 /* LaunchScreen.storyboard */,
+				E6E82F32207A7FCC00ADC062 /* GeoFire */,
 				E6FCB398206AF26200FF1F10 /* Info.plist */,
 				E6FCB390206AF26200FF1F10 /* hotty.xcdatamodeld */,
 				BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */,
@@ -185,15 +265,12 @@
 		E6FCB39F206AF2E400FF1F10 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BFABA20C207753DC00EC4BAD /* UserApi.swift */,
 				BFABA2102077562A00EC4BAD /* Api.swift */,
 				BFABA2122077562B00EC4BAD /* CommentApi.swift */,
-				BFABA2142077562B00EC4BAD /* Config.swift */,
 				BFABA20F2077562A00EC4BAD /* HelperService.swift */,
 				BFABA20E2077562900EC4BAD /* MyPostsApi.swift */,
 				BFABA2132077562B00EC4BAD /* Post_CommentApi.swift */,
 				BFABA2112077562A00EC4BAD /* PostApi.swift */,
-				BFABA2152077562B00EC4BAD /* UserApi.swift */,
 				E6FCB3AC206AFA1500FF1F10 /* InsetTextField.swift */,
 				E6FCB3AB206AFA1500FF1F10 /* KeyboardBoundView.swift */,
 				E6FCB3AF206AFA1600FF1F10 /* RoundedShadow.swift */,
@@ -201,6 +278,7 @@
 				E6FCB3AD206AFA1500FF1F10 /* RoundedShadowImageView.swift */,
 				BF5CEF8A2075574F00437106 /* HeaderProfileCollectionReusableView.swift */,
 				BFABA21E2077563D00EC4BAD /* PhotoCollectionViewCell.swift */,
+				E6E82F292077EA7B00ADC062 /* userApi.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +297,8 @@
 				E6FCB3D0206EA88200FF1F10 /* SettingsVC.swift */,
 				BFB612CB206C3580002017A8 /* PreviewCameraVC.swift */,
 				BFB612CD206C37C5002017A8 /* CameraVC.swift */,
+				E6E82F212077B0B200ADC062 /* StoryContentVC.swift */,
+				E6E82F232077B0E500ADC062 /* StoryViewVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,6 +309,8 @@
 				E6FCB3C2206C1AE000FF1F10 /* Constants.swift */,
 				E6FCB3D2206EB7E100FF1F10 /* AuthService.swift */,
 				E6FCB3D4206F0CAF00FF1F10 /* Config.swift */,
+				E6E82F252077B12500ADC062 /* SegmentedProgressBar.swift */,
+				E6E82F272077B17D00ADC062 /* usersCollectionView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -300,6 +382,9 @@
 				BFB612D0206D15AE002017A8 /* GoogleService-Info.plist in Resources */,
 				BFB612CA206C3498002017A8 /* noun_105496_cc.png in Resources */,
 				E6FCB394206AF26200FF1F10 /* Assets.xcassets in Resources */,
+				E6E82F2F20783CA400ADC062 /* output3.mp4 in Resources */,
+				E6E82F3120783CA400ADC062 /* output.mp4 in Resources */,
+				E6E82F3020783CA400ADC062 /* output2.mp4 in Resources */,
 				BF54FF242072907300AC44F0 /* retro.json in Resources */,
 				BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */,
 				E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */,
@@ -342,6 +427,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -353,6 +439,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -392,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5CEF8B2075574F00437106 /* HeaderProfileCollectionReusableView.swift in Sources */,
+				E6E82F282077B17D00ADC062 /* usersCollectionView.swift in Sources */,
 				BFABA2192077562C00EC4BAD /* PostApi.swift in Sources */,
 				E6FCB3D1206EA88200FF1F10 /* SettingsVC.swift in Sources */,
 				BFB612CE206C37C5002017A8 /* CameraVC.swift in Sources */,
@@ -402,28 +490,34 @@
 				E6FCB3E4206F12E700FF1F10 /* ProgressHUD.m in Sources */,
 				E6FCB3A4206AF75E00FF1F10 /* SignUpVC.swift in Sources */,
 				BFABA21B2077562C00EC4BAD /* Post_CommentApi.swift in Sources */,
+				E6E82F48207A7FCD00ADC062 /* GFGeoHash.m in Sources */,
 				E6FCB3D3206EB7E100FF1F10 /* AuthService.swift in Sources */,
 				BFB612CC206C3580002017A8 /* PreviewCameraVC.swift in Sources */,
+				E6E82F44207A7FCD00ADC062 /* GFBase32Utils.m in Sources */,
 				BFABA21A2077562C00EC4BAD /* CommentApi.swift in Sources */,
-				BFABA20D207753DD00EC4BAD /* UserApi.swift in Sources */,
 				E6FCB3B2206AFA1600FF1F10 /* RoundedShadowImageView.swift in Sources */,
 				BFC857D0206BF68D009920DD /* MapVC.swift in Sources */,
+				E6E82F2A2077EA7B00ADC062 /* userApi.swift in Sources */,
 				E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */,
 				E6FCB3B0206AFA1600FF1F10 /* KeyboardBoundView.swift in Sources */,
 				BFABA2172077562C00EC4BAD /* HelperService.swift in Sources */,
 				BFC857D6206BF6D3009920DD /* SearchVC.swift in Sources */,
+				E6E82F47207A7FCD00ADC062 /* GFQuery.m in Sources */,
+				E6E82F242077B0E500ADC062 /* StoryViewVC.swift in Sources */,
 				BFABA21F2077563D00EC4BAD /* PhotoCollectionViewCell.swift in Sources */,
-				BFABA21D2077562C00EC4BAD /* UserApi.swift in Sources */,
+				E6E82F45207A7FCD00ADC062 /* GeoFire.m in Sources */,
 				E6FCB3A6206AF79800FF1F10 /* LoginVC.swift in Sources */,
 				BFABA2162077562C00EC4BAD /* MyPostsApi.swift in Sources */,
+				E6E82F262077B12500ADC062 /* SegmentedProgressBar.swift in Sources */,
+				E6E82F46207A7FCD00ADC062 /* GFGeoHashQuery.m in Sources */,
 				BFB612C2206C0C27002017A8 /* DNMainTabVC.swift in Sources */,
 				BFC857D2206BF6A2009920DD /* CommunityVC.swift in Sources */,
 				E6FCB3D5206F0CAF00FF1F10 /* Config.swift in Sources */,
 				E6FCB3B4206AFA1600FF1F10 /* RoundedShadow.swift in Sources */,
 				E6FCB3B1206AFA1600FF1F10 /* InsetTextField.swift in Sources */,
 				E6FCB3B3206AFA1600FF1F10 /* RoundedShadowButton.swift in Sources */,
-				BFABA21C2077562C00EC4BAD /* Config.swift in Sources */,
 				BFABA2182077562C00EC4BAD /* Api.swift in Sources */,
+				E6E82F222077B0B200ADC062 /* StoryContentVC.swift in Sources */,
 				E60599B220710C6700B48120 /* Inceptionv3.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,11 +658,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57U64U5JMJ;
+				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hotty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty89;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hotty/hotty-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -584,11 +678,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 57U64U5JMJ;
+				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hotty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty89;
+				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "hotty/hotty-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

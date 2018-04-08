@@ -37,12 +37,12 @@ class LoginVC: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        if Auth.auth().currentUser != nil {
-            self.performSegue(withIdentifier: TO_LOGIN, sender: nil)
-        }
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        if Auth.auth().currentUser != nil {
+//            self.performSegue(withIdentifier: TO_LOGIN, sender: nil)
+//        }
+//    }
     
     func handleTextFields() {
         universityEmailTxtField.addTarget(self, action: #selector(SignUpVC.textFieldDidChange), for: UIControlEvents.editingChanged)

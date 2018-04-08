@@ -11,6 +11,10 @@ import CoreData
 import Firebase
 import GoogleMaps
 import GooglePlaces
+import FirebaseInstanceID
+import FirebaseMessaging
+
+var appDelegate = AppDelegate()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,14 +27,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().tintColor = .black
         UITabBar.appearance().backgroundColor=UIColor.clear
         FirebaseApp.configure()
+        Analytics.debugDescription()
         
-        GMSServices.provideAPIKey("")
+        appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        GMSServices.provideAPIKey("AIzaSyBMFsT8K9b8_LbHd2JQbOBJYlNFy1-soEU")
         GMSPlacesClient.provideAPIKey("AIzaSyBMFsT8K9b8_LbHd2JQbOBJYlNFy1-soEU")
+        
+        self.window?.rootViewController = LoginVC()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         if let window = self.window {
             window.backgroundColor = UIColor.white
-            
+        
         
         }
         
@@ -106,6 +115,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
-
