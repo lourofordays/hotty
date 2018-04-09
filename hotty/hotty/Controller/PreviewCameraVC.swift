@@ -21,8 +21,8 @@ class PreviewCameraVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDe
     
     @IBOutlet weak var photo: UIImageView!
     var image: UIImage!
-    var lat: CLLocationDegrees
-    var long: CLLocationDegrees
+    var lat: CLLocationDegrees = 0.0
+    var long: CLLocationDegrees = 0.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class PreviewCameraVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDe
             let photoIdString = NSUUID().uuidString
             let coordinates = CLLocationCoordinate2D(latitude: lat, longitude: long)
             print(photoIdString)
-            let storageRef = Storage.storage().reference(forURL: Config.STORAGE_ROOT_REF).child("posts").child(photoIdString).child(coordinates)
+            let storageRef = Storage.storage().reference(forURL: Config.STORAGE_ROOT_REF).child("posts").child("photoIdString").child("coordinates")
             storageRef.putData(imageData, metadata: nil, completion: { (metadata, error) in
                 if error != nil {
                     return
@@ -63,7 +63,7 @@ class PreviewCameraVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDe
         let ref = Database.database().reference()
         let postsReference = ref.child("posts")
         let newPostId = postsReference.childByAutoId().key
-        let newPostReference = postsReference.child(newPostId).child(coordinates)
+        let newPostReference = postsReference.child(newPostId).child("coordinates")
         newPostReference.setValue(["photoUrl": photoUrl], withCompletionBlock: {
             (error, ref) in
             if error != nil {
