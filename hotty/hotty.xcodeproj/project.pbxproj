@@ -21,28 +21,25 @@
 		BFB612CA206C3498002017A8 /* noun_105496_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB612C9206C3497002017A8 /* noun_105496_cc.png */; };
 		BFB612CC206C3580002017A8 /* PreviewCameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612CB206C3580002017A8 /* PreviewCameraVC.swift */; };
 		BFB612CE206C37C5002017A8 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB612CD206C37C5002017A8 /* CameraVC.swift */; };
-		BFB612D0206D15AE002017A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */; };
 		BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857C9206B8C9D009920DD /* SignInImage.jpg */; };
 		BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BFC857CD206B99A8009920DD /* SignUpImage.jpg */; };
 		BFC857D0206BF68D009920DD /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857CF206BF68D009920DD /* MapVC.swift */; };
 		BFC857D2206BF6A2009920DD /* CommunityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D1206BF6A2009920DD /* CommunityVC.swift */; };
 		BFC857D4206BF6BC009920DD /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D3206BF6BC009920DD /* CameraViewController.swift */; };
 		BFC857D6206BF6D3009920DD /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC857D5206BF6D3009920DD /* SearchVC.swift */; };
-		D3154D3C113B32E75AEFC2A8 /* Pods_hotty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7CB149776E429827B36034 /* Pods_hotty.framework */; };
 		E60599B220710C6700B48120 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E60599B120710C6700B48120 /* Inceptionv3.mlmodel */; };
 		E6E82F222077B0B200ADC062 /* StoryContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F212077B0B200ADC062 /* StoryContentVC.swift */; };
 		E6E82F242077B0E500ADC062 /* StoryViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F232077B0E500ADC062 /* StoryViewVC.swift */; };
 		E6E82F262077B12500ADC062 /* SegmentedProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F252077B12500ADC062 /* SegmentedProgressBar.swift */; };
 		E6E82F282077B17D00ADC062 /* usersCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F272077B17D00ADC062 /* usersCollectionView.swift */; };
 		E6E82F2A2077EA7B00ADC062 /* userApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F292077EA7B00ADC062 /* userApi.swift */; };
-		E6E82F2F20783CA400ADC062 /* output3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E6E82F2C20783CA300ADC062 /* output3.mp4 */; };
-		E6E82F3020783CA400ADC062 /* output2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E6E82F2D20783CA300ADC062 /* output2.mp4 */; };
-		E6E82F3120783CA400ADC062 /* output.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E6E82F2E20783CA400ADC062 /* output.mp4 */; };
 		E6E82F44207A7FCD00ADC062 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F39207A7FCC00ADC062 /* GFBase32Utils.m */; };
 		E6E82F45207A7FCD00ADC062 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F3B207A7FCC00ADC062 /* GeoFire.m */; };
 		E6E82F46207A7FCD00ADC062 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F3C207A7FCC00ADC062 /* GFGeoHashQuery.m */; };
 		E6E82F47207A7FCD00ADC062 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F3D207A7FCC00ADC062 /* GFQuery.m */; };
 		E6E82F48207A7FCD00ADC062 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E82F3E207A7FCC00ADC062 /* GFGeoHash.m */; };
+		E6E82F88207D7FA000ADC062 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6E82F87207D7F9F00ADC062 /* GoogleService-Info.plist */; };
+		E6E82F90207E43F800ADC062 /* Pods_hotty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6E82F91207E43F800ADC062 /* Pods_hotty.framework */; };
 		E6FCB38A206AF26200FF1F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB389206AF26200FF1F10 /* AppDelegate.swift */; };
 		E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6FCB38D206AF26200FF1F10 /* Main.storyboard */; };
 		E6FCB392206AF26200FF1F10 /* hotty.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6FCB390206AF26200FF1F10 /* hotty.xcdatamodeld */; };
@@ -82,7 +79,6 @@
 		BFB612C9206C3497002017A8 /* noun_105496_cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_105496_cc.png; sourceTree = "<group>"; };
 		BFB612CB206C3580002017A8 /* PreviewCameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCameraVC.swift; sourceTree = "<group>"; };
 		BFB612CD206C37C5002017A8 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
-		BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BFC857C9206B8C9D009920DD /* SignInImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignInImage.jpg; sourceTree = "<group>"; };
 		BFC857CD206B99A8009920DD /* SignUpImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SignUpImage.jpg; sourceTree = "<group>"; };
 		BFC857CF206BF68D009920DD /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -95,9 +91,6 @@
 		E6E82F252077B12500ADC062 /* SegmentedProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedProgressBar.swift; sourceTree = "<group>"; };
 		E6E82F272077B17D00ADC062 /* usersCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersCollectionView.swift; sourceTree = "<group>"; };
 		E6E82F292077EA7B00ADC062 /* userApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userApi.swift; sourceTree = "<group>"; };
-		E6E82F2C20783CA300ADC062 /* output3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = output3.mp4; path = "../../../../../../Downloads/Instagram-stories-master/InstagramStories/videos/output3.mp4"; sourceTree = "<group>"; };
-		E6E82F2D20783CA300ADC062 /* output2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = output2.mp4; path = "../../../../../../Downloads/Instagram-stories-master/InstagramStories/videos/output2.mp4"; sourceTree = "<group>"; };
-		E6E82F2E20783CA400ADC062 /* output.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = output.mp4; path = "../../../../../../Downloads/Instagram-stories-master/InstagramStories/videos/output.mp4"; sourceTree = "<group>"; };
 		E6E82F33207A7FCC00ADC062 /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
 		E6E82F35207A7FCC00ADC062 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
 		E6E82F36207A7FCC00ADC062 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
@@ -113,6 +106,8 @@
 		E6E82F41207A7FCC00ADC062 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
 		E6E82F42207A7FCC00ADC062 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
 		E6E82F43207A7FCC00ADC062 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		E6E82F87207D7F9F00ADC062 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E6E82F91207E43F800ADC062 /* Pods_hotty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_hotty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6FCB386206AF26200FF1F10 /* hotty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hotty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6FCB389206AF26200FF1F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6FCB38E206AF26200FF1F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3154D3C113B32E75AEFC2A8 /* Pods_hotty.framework in Frameworks */,
+				E6E82F90207E43F800ADC062 /* Pods_hotty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +148,7 @@
 		8135972BF8CEB4690AC873AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E6E82F91207E43F800ADC062 /* Pods_hotty.framework */,
 				9E7CB149776E429827B36034 /* Pods_hotty.framework */,
 			);
 			name = Frameworks;
@@ -165,16 +161,6 @@
 				11EFD7175A7463B67FA92F3A /* Pods-hotty.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		E6E82F2B20783C8100ADC062 /* Videos */ = {
-			isa = PBXGroup;
-			children = (
-				E6E82F2E20783CA400ADC062 /* output.mp4 */,
-				E6E82F2D20783CA300ADC062 /* output2.mp4 */,
-				E6E82F2C20783CA300ADC062 /* output3.mp4 */,
-			);
-			path = Videos;
 			sourceTree = "<group>";
 		};
 		E6E82F32207A7FCC00ADC062 /* GeoFire */ = {
@@ -241,7 +227,6 @@
 		E6FCB388206AF26200FF1F10 /* hotty */ = {
 			isa = PBXGroup;
 			children = (
-				E6E82F2B20783C8100ADC062 /* Videos */,
 				E6FCB3B8206C140B00FF1F10 /* Utilities */,
 				E6FCB39F206AF2E400FF1F10 /* View */,
 				E6FCB3A0206AF2EC00FF1F10 /* Controller */,
@@ -253,7 +238,7 @@
 				E6E82F32207A7FCC00ADC062 /* GeoFire */,
 				E6FCB398206AF26200FF1F10 /* Info.plist */,
 				E6FCB390206AF26200FF1F10 /* hotty.xcdatamodeld */,
-				BFB612CF206D15AE002017A8 /* GoogleService-Info.plist */,
+				E6E82F87207D7F9F00ADC062 /* GoogleService-Info.plist */,
 				E6FCB3E2206F12E600FF1F10 /* ProgressHUD.bundle */,
 				E6FCB3E3206F12E700FF1F10 /* ProgressHUD.h */,
 				E6FCB3E1206F12E600FF1F10 /* ProgressHUD.m */,
@@ -379,16 +364,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6FCB397206AF26200FF1F10 /* LaunchScreen.storyboard in Resources */,
-				BFB612D0206D15AE002017A8 /* GoogleService-Info.plist in Resources */,
 				BFB612CA206C3498002017A8 /* noun_105496_cc.png in Resources */,
 				E6FCB394206AF26200FF1F10 /* Assets.xcassets in Resources */,
-				E6E82F2F20783CA400ADC062 /* output3.mp4 in Resources */,
-				E6E82F3120783CA400ADC062 /* output.mp4 in Resources */,
-				E6E82F3020783CA400ADC062 /* output2.mp4 in Resources */,
 				BF54FF242072907300AC44F0 /* retro.json in Resources */,
 				BFC857CE206B99A9009920DD /* SignUpImage.jpg in Resources */,
 				E6FCB38F206AF26200FF1F10 /* Main.storyboard in Resources */,
 				BFC857CA206B8C9D009920DD /* SignInImage.jpg in Resources */,
+				E6E82F88207D7FA000ADC062 /* GoogleService-Info.plist in Resources */,
 				BFB612BC206C054F002017A8 /* transparent-image8.png in Resources */,
 				E6FCB3E5206F12E700FF1F10 /* ProgressHUD.bundle in Resources */,
 			);
@@ -422,24 +404,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-hotty/Pods-hotty-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -573,7 +547,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -630,7 +604,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -657,13 +631,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hotty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PODS_CONFIGURATION_BUILD_DIR = "${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hotty/hotty-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -677,14 +654,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6P4Y4YVV3G;
 				INFOPLIST_FILE = hotty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PODS_CONFIGURATION_BUILD_DIR = "${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.louro.hotty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "hotty/hotty-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -700,7 +681,7 @@
 				E6FCB39A206AF26200FF1F10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E6FCB39B206AF26200FF1F10 /* Build configuration list for PBXNativeTarget "hotty" */ = {
 			isa = XCConfigurationList;
@@ -709,7 +690,7 @@
 				E6FCB39D206AF26200FF1F10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

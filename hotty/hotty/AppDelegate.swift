@@ -9,12 +9,10 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseAnalytics
 import GoogleMaps
 import GooglePlaces
-import FirebaseInstanceID
-import FirebaseMessaging
 
-var appDelegate = AppDelegate()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,17 +27,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         Analytics.debugDescription()
         
-        appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
         
         GMSServices.provideAPIKey("AIzaSyBMFsT8K9b8_LbHd2JQbOBJYlNFy1-soEU")
         GMSPlacesClient.provideAPIKey("AIzaSyBMFsT8K9b8_LbHd2JQbOBJYlNFy1-soEU")
-        
-        self.window?.rootViewController = LoginVC()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         if let window = self.window {
             window.backgroundColor = UIColor.white
         
+        self.window?.rootViewController = LoginVC()
         
         }
         

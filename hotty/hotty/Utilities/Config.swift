@@ -1,6 +1,6 @@
 //
 //  Config.swift
-//  hotty
+//  hotty louro
 //
 //  Created by Louis Régis on 31.03.18.
 //  Copyright © 2018 Louro. All rights reserved.

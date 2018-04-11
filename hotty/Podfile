@@ -6,19 +6,15 @@ project 'hotty.xcodeproj'
 target 'hotty' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
+  
   pod 'Firebase/Core'
-  pod 'Alamofire', '~> 4.7'
-  pod 'AlamofireImage', '~> 3.3'
   pod 'SwiftyJSON'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-  pod 'Firebase/Messaging'
-  pod 'ProgressHUD'
+  pod 'Firebase/Analytics'
   pod 'GoogleMaps'
   pod 'GooglePlacePicker'
   pod 'GooglePlaces'
-
-
-
+  
 end

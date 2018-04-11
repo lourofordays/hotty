@@ -17,12 +17,11 @@ import FirebaseDatabase
 
 
 
-class PreviewCameraVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
+class PreviewCameraVC: UIViewController {
     
     @IBOutlet weak var photo: UIImageView!
     var image: UIImage!
-    var lat: CLLocationDegrees = 0.0
-    var long: CLLocationDegrees = 0.0
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,9 +43,8 @@ class PreviewCameraVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDe
         if self.image == self.image,  let imageData = UIImageJPEGRepresentation(photo, 0.1) {
             
             let photoIdString = NSUUID().uuidString
-            let coordinates = CLLocationCoordinate2D(latitude: lat, longitude: long)
             print(photoIdString)
-            let storageRef = Storage.storage().reference(forURL: Config.STORAGE_ROOT_REF).child("posts").child("photoIdString").child("coordinates")
+            let storageRef = Storage.storage().reference(forURL: Config.STORAGE_ROOT_REF).child("posts").child("photoIdString")
             storageRef.putData(imageData, metadata: nil, completion: { (metadata, error) in
                 if error != nil {
                     return
@@ -63,7 +61,7 @@ class PreviewCameraVC: UIViewController, GMSMapViewDelegate, CLLocationManagerDe
         let ref = Database.database().reference()
         let postsReference = ref.child("posts")
         let newPostId = postsReference.childByAutoId().key
-        let newPostReference = postsReference.child(newPostId).child("coordinates")
+        let newPostReference = postsReference.child(newPostId)
         newPostReference.setValue(["photoUrl": photoUrl], withCompletionBlock: {
             (error, ref) in
             if error != nil {

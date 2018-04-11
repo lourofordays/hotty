@@ -51,7 +51,7 @@ class SignUpVC: UIViewController {
     }
     
     @objc func textFieldDidChange() {
-        guard let username = usernameTxtField.text, !username.isEmpty, let password = passwordTxtField.text, !password.isEmpty, let university = universityTxtField.text, !university.isEmpty, let universityEmail = universityEmailTxtField.text, !universityEmail.isEmpty else {
+        guard let username = usernameTxtField.text, username.isEmpty, let password = passwordTxtField.text, password.isEmpty, let university = universityTxtField.text, university.isEmpty, let universityEmail = universityEmailTxtField.text, universityEmail.isEmpty else {
             signUpBtn.setTitleColor(UIColor.lightText, for: UIControlState.normal)
             signUpBtn.isEnabled = false
             return
